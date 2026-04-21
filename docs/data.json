@@ -4,7 +4,7 @@
     "channel": "Yannic Kilcher",
     "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
     "published": "2026-03-06",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: 'NoneType' object is not subscriptable",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/xHi8PUIVyoo/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=xHi8PUIVyoo"
@@ -24,7 +24,7 @@
     "channel": "Yannic Kilcher",
     "title": "TiDAR: Think in Diffusion, Talk in Autoregression (Paper Analysis)",
     "published": "2025-12-27",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782040000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782880000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/taCVT5vDAk0/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=taCVT5vDAk0"
@@ -34,7 +34,7 @@
     "channel": "Yannic Kilcher",
     "title": "Titans: Learning to Memorize at Test Time (Paper Analysis)",
     "published": "2025-12-14",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782040000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/v67plFw1nMw/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=v67plFw1nMw"
@@ -44,7 +44,7 @@
     "channel": "Yannic Kilcher",
     "title": "[Paper Analysis] The Free Transformer (and some Variational Autoencoder stuff)",
     "published": "2025-11-01",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782040000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/Nao16-6l6dQ/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Nao16-6l6dQ"
@@ -64,7 +64,7 @@
     "channel": "AI Explained",
     "title": "Claude Mythos: Highlights from 244-page Release",
     "published": "2026-04-08",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782940000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/txx6ec6MLNY/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=txx6ec6MLNY"
@@ -74,7 +74,7 @@
     "channel": "AI Explained",
     "title": "Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?",
     "published": "2026-03-26",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782100000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782940000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/s4tptozUJ8Y/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y"
@@ -84,7 +84,7 @@
     "channel": "AI Explained",
     "title": "What the New ChatGPT 5.4 Means for the World",
     "published": "2026-03-06",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782100000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782940000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/zizoDORjmlQ/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=zizoDORjmlQ"
@@ -94,7 +94,7 @@
     "channel": "AI Explained",
     "title": "Deadline Day for Autonomous AI Weapons &amp; Mass Surveillance",
     "published": "2026-02-27",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782100000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/Cru804JMjPI/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Cru804JMjPI"
@@ -114,7 +114,7 @@
     "channel": "Matthew Berman",
     "title": "Start using MCP in DevTools today!",
     "published": "2026-01-29",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783000000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/4x1fl67d_Ag/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=4x1fl67d_Ag"
@@ -124,7 +124,7 @@
     "channel": "Matthew Berman",
     "title": "Web AI use cases and strategies in the real world",
     "published": "2025-05-22",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782160000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783000000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/YN04nNsg_L4/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=YN04nNsg_L4"
@@ -134,7 +134,7 @@
     "channel": "Matthew Berman",
     "title": "Dialog over a popover #CSSPodcast",
     "published": "2024-06-11",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782160000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783000000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/yORy1IEHDKk/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=yORy1IEHDKk"
@@ -144,7 +144,7 @@
     "channel": "Two Minute Papers",
     "title": "DeepMind’s New AI: A Gift To Humanity",
     "published": "2026-04-16",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782160000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783000000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/Sk9tvyRSCgY/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Sk9tvyRSCgY"
@@ -174,7 +174,7 @@
     "channel": "Two Minute Papers",
     "title": "DeepMind’s New AI Just Changed Science Forever",
     "published": "2026-03-27",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782220000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783060000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/Io_GqmbNBbY/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Io_GqmbNBbY"
@@ -184,7 +184,7 @@
     "channel": "Two Minute Papers",
     "title": "This Physics Breakthrough Looks Impossible",
     "published": "2026-03-12",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782220000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783060000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/RDQ4vHAPNls/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=RDQ4vHAPNls"
@@ -194,7 +194,7 @@
     "channel": "Fireship",
     "title": "Millions of WordPress sites just got hacked... again",
     "published": "2026-04-16",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783060000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/piah4fV_o2Q/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=piah4fV_o2Q"
@@ -204,7 +204,7 @@
     "channel": "Fireship",
     "title": "Claude Mythos is too dangerous for public consumption...",
     "published": "2026-04-10",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783060000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/d3Qq-rkp_to/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=d3Qq-rkp_to"
@@ -224,7 +224,7 @@
     "channel": "Fireship",
     "title": "Cursor ditches VS Code, but not everyone is happy...",
     "published": "2026-04-06",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782280000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'meta-llama/llama-3.3-70b-instruct:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Venice', 'is_byok': False}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/JSuS-zXMVwE/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=JSuS-zXMVwE"
@@ -234,7 +234,7 @@
     "channel": "Fireship",
     "title": "Tragic mistake... Anthropic leaks Claude’s source code",
     "published": "2026-04-01",
-    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776782280000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
+    "summary": "Error generating summary: Error code: 429 - {'error': {'message': 'Rate limit exceeded: limit_rpm/meta-llama/llama-3.3-70b-instruct/839b2e30-a1b4-4974-b980-3e534b5873b1. High demand for meta-llama/llama-3.3-70b-instruct:free on OpenRouter - limited to 8 requests per minute. Please retry shortly.', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '8', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1776783120000'}, 'provider_name': None}}, 'user_id': 'user_3CfEUhfWaaXRLidMT8XxMWLseH1'}",
     "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/mBHRPeg8zPU/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=mBHRPeg8zPU"
