@@ -2,6 +2,7 @@ import os
 import json
 import time
 import random
+import re
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -37,8 +38,7 @@ def load_existing_data():
             with open(DATA_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 return {v["video_id"]: v for v in data}
-        except Exception as e:
-            print(f"Loading existing data failed: {e}")
+        except:
             return {}
     return {}
 
@@ -54,59 +54,69 @@ def get_latest_videos(channel_id, max_results=5):
         ).execute()
         return res.get("items", [])
     except Exception as e:
-        print(f"Error fetching videos for {channel_id}: {e}")
+        print(f"Error fetching videos: {e}")
         return []
 
 def get_smart_transcript(video_id):
-    """獲取字幕，若失敗則返回 None"""
+    """精確抓取前、中、後段逐字稿，優化 Token 並保留關鍵資訊"""
     try:
-        # 在 GitHub Actions 跑，通常不需要 cookies，但加個隨機延遲
-        time.sleep(random.uniform(1, 3))
+        time.sleep(random.uniform(1, 2))
         data = YouTubeTranscriptApi.get_transcript(video_id, languages=['en', 'en-US'])
-        full_text = " ".join([t['text'] for t in data])
         
-        # 截斷過長的字幕以節省 Token (取頭、中、尾)
-        if len(full_text) > 9000:
-            mid = len(full_text) // 2
-            return full_text[:3000] + "\n[...]\n" + full_text[mid-1500:mid+1500] + "\n[...]\n" + full_text[-3000:]
-        return full_text
-    except Exception:
+        if len(data) <= 150:
+            return " ".join([t['text'] for t in data])
+
+        # 抓取開頭 50 句 (通常有自我介紹), 中間 50 句, 結尾 50 句 (通常有總結與情緒)
+        mid = len(data) // 2
+        head = " ".join([t['text'] for t in data[:50]])
+        body = " ".join([t['text'] for t in data[mid-25:mid+25]])
+        tail = " ".join([t['text'] for t in data[-50:]])
+        
+        return f"[START]\n{head}\n[MIDDLE]\n{body}\n[END]\n{tail}"
+    except:
         return None
 
-def analyze_with_llm(title, transcript, retries=3):
-    """使用 OpenRouter 分析影片內容，含重試機制"""
-    content = transcript if transcript else "No transcript available. Analyze based on title only."
+def analyze_with_llm(title, channel_name, transcript, retries=3):
+    """使用 OpenRouter 分析內容，針對主講人與情緒優化 Prompt"""
+    content = transcript if transcript else "No transcript available. Use title/channel only."
     
     prompt = f"""
-    Analyze this YouTube video:
+    You are an expert AI news analyst. Analyze this YouTube video from the channel '{channel_name}'.
+    
+    VIDEO DATA:
     Title: {title}
-    Transcript: {content}
+    Channel Context: {channel_name}
+    Transcript Snippets: {content}
 
+    TASK:
     Return a JSON object with:
-    1. "summary": A 2-sentence concise summary.
-    2. "topics": A list of 3-5 short tags (e.g., "AI News", "Coding").
+    1. "speaker": Identify the speaker. If not explicitly named in transcript, check if it's likely '{channel_name}'.
+    2. "summary": A 2-sentence concise summary in Traditional Chinese.
+    3. "sentiment": Analyze the tone (e.g., "Excited/Optimistic", "Critical/Warning", "Educational/Neutral"). Avoid just "Neutral" if possible.
+    4. "topics": A list of 3-5 tags in English.
     """
 
     for attempt in range(retries):
         try:
             response = client.chat.completions.create(
-                model="google/gemini-2.0-flash-001", # 使用免費或穩定的模型
+                model="google/gemini-2.0-flash-001",
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"}
             )
             
             raw_res = response.choices[0].message.content
-            # 確保解析 JSON 乾淨
-            return json.loads(raw_res)
+            # 清理 Markdown 可能帶有的 ```json 標記
+            clean_res = re.sub(r"```json|```", "", raw_res).strip()
+            return json.loads(clean_res)
             
         except Exception as e:
             if "429" in str(e) and attempt < retries - 1:
                 wait_time = (attempt + 1) * 20
-                print(f"      [!] Rate limited (429). Waiting {wait_time}s...")
+                print(f"      [!] Rate limited. Waiting {wait_time}s...")
                 time.sleep(wait_time)
                 continue
             print(f"      [!] LLM Error: {str(e)[:100]}")
-            return {"summary": "Summary unavailable.", "topics": ["Error"]}
+            return {"speaker": channel_name, "summary": "暫時無法產生摘要。", "sentiment": "Unknown", "topics": ["Error"]}
 
 def run():
     existing_data = load_existing_data()
@@ -120,17 +130,17 @@ def run():
             v_id = v["id"]["videoId"]
             title = v["snippet"]["title"]
             
-            # 快取邏輯：如果影片已存在且不是錯誤紀錄，就跳過
+            # 快取邏輯：如果已有成功紀錄則跳過
             if v_id in existing_data:
                 old_v = existing_data[v_id]
-                if "Error" not in old_v.get("summary", "") and "unavailable" not in old_v.get("summary", ""):
-                    print(f"  - Skipping: {title[:50]} (Already exists)")
+                if "暫時無法" not in old_v.get("summary", ""):
+                    print(f"  - Skipping: {title[:40]}")
                     results.append(old_v)
                     continue
 
-            print(f"  + Processing: {title[:50]}...")
+            print(f"  + Analyzing: {title[:40]}...")
             transcript = get_smart_transcript(v_id)
-            analysis = analyze_with_llm(title, transcript)
+            analysis = analyze_with_llm(title, channel_name, transcript)
 
             results.append({
                 "video_id": v_id,
@@ -138,23 +148,18 @@ def run():
                 "title": title,
                 "published": v["snippet"]["publishedAt"][:10],
                 "thumbnail": v["snippet"]["thumbnails"]["medium"]["url"],
-                "url": f"https://www.youtube.com/watch?v={v_id}",
+                "url": f"[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=){v_id}",
                 **analysis
             })
-            
-            # 每次 API 呼叫後基礎節流，避免觸發 429
             time.sleep(5)
 
-    # 確保 docs 資料夾存在
     os.makedirs("docs", exist_ok=True)
-    
-    # 按照發布日期排序（新的在前）
     results.sort(key=lambda x: x["published"], reverse=True)
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
     
-    print(f"\n✅ Done! Processed {len(results)} videos.")
+    print(f"\n✅ All done! {len(results)} videos in database.")
 
 if __name__ == "__main__":
     run()
