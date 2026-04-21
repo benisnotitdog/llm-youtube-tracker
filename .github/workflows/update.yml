@@ -31,7 +31,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+          git stash
           git pull --rebase origin main
+          git stash pop
           git add docs/data.json
           git diff --cached --quiet || git commit -m "chore: auto-update data.json"
           git push
