@@ -22,7 +22,6 @@ CHANNELS = {
 
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 
-# 初始化 OpenRouter 客戶端
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=OPENROUTER_API_KEY,
@@ -40,36 +39,64 @@ def get_latest_videos(channel_id, max_results=5):
 
 def get_transcript(video_id):
     try:
-        transcript = YouTubeTranscriptApi.get_transcript(video_id)
-        text = " ".join([t["text"] for t in transcript])
-        return text[:4000] # 截取前4000字避免超過長度限制
-    except Exception:
+        # 先列出該影片所有可用的字幕清單
+        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+        
+        try:
+            # 優先找人工翻譯的英文或自動生成的英文字幕
+            transcript = transcript_list.find_transcript(['en', 'en-US', 'en-GB'])
+        except Exception:
+            # 如果沒有英文，隨便抓第一個可用的字幕再翻譯成英文
+            transcript = transcript_list.find_transcript(transcript_list._manually_created_transcripts.keys() or transcript_list._generated_transcripts.keys())
+            transcript = transcript.translate('en')
+            
+        data = transcript.fetch()
+        text = " ".join([t["text"] for t in data])
+        return text[:5000] # 截取前 5000 字
+    except Exception as e:
+        print(f"      [!] Transcript error for {video_id}: {str(e)}")
         return None
 
 def summarize(title, transcript):
+    # 即便沒有 transcript，我們也可以單靠 Title 讓 AI 去猜測和總結，不要直接放棄！
     if not transcript:
-        return "No transcript available."
-    prompt = f"""YouTube video title: {title}
-Transcript excerpt: {transcript}
+        transcript_excerpt = "No transcript could be extracted. Please infer the content entirely based on the video title."
+    else:
+        transcript_excerpt = transcript
 
-In 2-3 sentences, summarize what LLM topics are discussed. Mention specific models, techniques, or concepts covered."""
+    prompt = f"""You are analyzing a YouTube video about Large Language Models (LLMs).
+Video Title: {title}
+Transcript Excerpt: {transcript_excerpt}
+
+Task 1: In 2-3 sentences, summarize the specific models, techniques, or news covered. Focus strictly on what the creator actually discusses.
+Task 2: Provide exactly 2-3 short, broad category tags that describe this video's relationship to the broader LLM ecosystem (e.g., "Paper Analysis", "AI News", "Coding & DevTools", "Model Benchmarking", "Ethics & Safety"). 
+
+Format your response EXACTLY like this:
+SUMMARY: <your summary here>
+TAGS: <tag1>, <tag2>
+"""
     
     try:
-        # 使用 OpenRouter 的完全免費 Gemini 模型
         response = client.chat.completions.create(
             model="google/gemini-2.5-flash:free",
             messages=[{"role": "user", "content": prompt}]
         )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        return f"Error generating summary: {str(e)}"
+        content = response.choices[0].message.content.strip()
+        
+        # 拆解 AI 的回覆
+        summary_part = "Failed to parse summary."
+        tags_part = "Uncategorized"
+        
+        for line in content.split("\n"):
+            if line.startswith("SUMMARY:"):
+                summary_part = line.replace("SUMMARY:", "").strip()
+            elif line.startswith("TAGS:"):
+                tags_part = line.replace("TAGS:", "").strip()
+                
+        return summary_part, tags_part
 
-def extract_topics(summary):
-    keywords = ["GPT", "Claude", "Gemini", "LLaMA", "Mistral", "RAG",
-                "fine-tuning", "prompt", "agent", "transformer", "RLHF",
-                "inference", "benchmark", "multimodal", "open-source"]
-    found = [k for k in keywords if k.lower() in summary.lower()]
-    return ", ".join(found) if found else "General LLM"
+    except Exception as e:
+        return f"Error generating summary: {str(e)}", "Error"
 
 def run():
     results = []
@@ -82,10 +109,11 @@ def run():
             published = v["snippet"]["publishedAt"]
             thumbnail = v["snippet"]["thumbnails"]["medium"]["url"]
             url = f"https://www.youtube.com/watch?v={video_id}"
+            
+            print(f"  > Processing: {title[:50]}...")
 
             transcript = get_transcript(video_id)
-            summary = summarize(title, transcript)
-            topics = extract_topics(summary)
+            summary, topics = summarize(title, transcript)
 
             results.append({
                 "video_id": video_id,
@@ -97,7 +125,6 @@ def run():
                 "thumbnail": thumbnail,
                 "url": url
             })
-            print(f"  ✓ {title[:60]}")
 
     os.makedirs("docs", exist_ok=True)
     with open("docs/data.json", "w", encoding="utf-8") as f:
