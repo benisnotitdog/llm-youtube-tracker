@@ -2,8 +2,8 @@ name: Update LLM Tracker
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # 每天香港時間早上 10 點（UTC+8 = UTC 02:00）自動跑
-  workflow_dispatch:       # 允許手動在 GitHub 上按按鈕觸發
+    - cron: '0 2 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -31,6 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+          git pull --rebase origin main
           git add docs/data.json
           git diff --cached --quiet || git commit -m "chore: auto-update data.json"
           git push
