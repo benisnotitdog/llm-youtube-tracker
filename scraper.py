@@ -1,9 +1,11 @@
 import os
 import json
+import time
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
 from openai import OpenAI
+
 
 load_dotenv()
 
@@ -39,26 +41,25 @@ def get_latest_videos(channel_id, max_results=5):
 
 def get_transcript(video_id):
     try:
-        # 先列出該影片所有可用的字幕清單
-        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+        # 新版 youtube-transcript-api 的正確寫法
+        ytt = YouTubeTranscriptApi()
+        transcript_list = ytt.list(video_id)
         
+        # 優先找英文字幕
         try:
-            # 優先找人工翻譯的英文或自動生成的英文字幕
             transcript = transcript_list.find_transcript(['en', 'en-US', 'en-GB'])
         except Exception:
-            # 如果沒有英文，隨便抓第一個可用的字幕再翻譯成英文
-            transcript = transcript_list.find_transcript(transcript_list._manually_created_transcripts.keys() or transcript_list._generated_transcripts.keys())
-            transcript = transcript.translate('en')
+            # 沒有英文就找第一個可用的，然後翻譯成英文
+            transcript = transcript_list.find_generated_transcript(['en'])
             
         data = transcript.fetch()
-        text = " ".join([t["text"] for t in data])
-        return text[:5000] # 截取前 5000 字
+        text = " ".join([t.text for t in data])
+        return text[:5000]
     except Exception as e:
         print(f"      [!] Transcript error for {video_id}: {str(e)}")
         return None
 
 def summarize(title, transcript):
-    # 即便沒有 transcript，我們也可以單靠 Title 讓 AI 去猜測和總結，不要直接放棄！
     if not transcript:
         transcript_excerpt = "No transcript could be extracted. Please infer the content entirely based on the video title."
     else:
@@ -69,7 +70,7 @@ Video Title: {title}
 Transcript Excerpt: {transcript_excerpt}
 
 Task 1: In 2-3 sentences, summarize the specific models, techniques, or news covered. Focus strictly on what the creator actually discusses.
-Task 2: Provide exactly 2-3 short, broad category tags that describe this video's relationship to the broader LLM ecosystem (e.g., "Paper Analysis", "AI News", "Coding & DevTools", "Model Benchmarking", "Ethics & Safety"). 
+Task 2: Provide exactly 2-3 short, broad category tags that describe this video's relationship to the broader LLM ecosystem (e.g., "Paper Analysis", "AI News", "Coding & DevTools", "Model Benchmarking", "Ethics & Safety").
 
 Format your response EXACTLY like this:
 SUMMARY: <your summary here>
@@ -77,13 +78,13 @@ TAGS: <tag1>, <tag2>
 """
     
     try:
+        time.sleep(8)  # 避免超過每分鐘8次的速率限制
         response = client.chat.completions.create(
-            model="google/gemini-2.5-flash:free",
+            model="meta-llama/llama-3.3-70b-instruct:free",
             messages=[{"role": "user", "content": prompt}]
         )
         content = response.choices[0].message.content.strip()
         
-        # 拆解 AI 的回覆
         summary_part = "Failed to parse summary."
         tags_part = "Uncategorized"
         
