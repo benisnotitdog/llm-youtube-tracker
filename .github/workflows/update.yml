@@ -1,0 +1,36 @@
+name: Update LLM Tracker
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 每天香港時間早上 10 點（UTC+8 = UTC 02:00）自動跑
+  workflow_dispatch:       # 允許手動在 GitHub 上按按鈕觸發
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python scraper.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/data.json
+          git diff --cached --quiet || git commit -m "chore: auto-update data.json"
+          git push
