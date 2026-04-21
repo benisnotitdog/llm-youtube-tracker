@@ -1,5 +1,23 @@
 [
   {
+    "video_id": "ji08ILsXQ7M",
+    "channel": "Matthew Berman",
+    "title": "Your mental model for AI testing: evals, LLM judges, and test layering",
+    "published": "2026-04-21",
+    "thumbnail": "https://i.ytimg.com/vi/ji08ILsXQ7M/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)ji08ILsXQ7M",
+    "speaker": "Matthew Berman",
+    "summary": "該影片討論了AI測試的心智模型，包括評估、LLM判斷和測試分層。它旨在幫助人們理解如何有效地測試和評估AI系統。",
+    "sentiment": "Educational/Informative",
+    "topics": [
+      "AI Testing",
+      "LLM Judges",
+      "Evals",
+      "Test Layering",
+      "Mental Models"
+    ]
+  },
+  {
     "video_id": "QVJcdfkRpH8",
     "channel": "AI Explained",
     "title": "Claude Opus 4.7 - A New Frontier, in Performance … and Drama",
