@@ -1,242 +1,158 @@
 [
   {
-    "video_id": "xHi8PUIVyoo",
-    "channel": "Yannic Kilcher",
-    "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
-    "published": "2026-03-06",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/xHi8PUIVyoo/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=xHi8PUIVyoo"
-  },
-  {
-    "video_id": "Dr6jw-WAd9E",
-    "channel": "Yannic Kilcher",
-    "title": "Traditional X-Mas Stream",
-    "published": "2025-12-29",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/Dr6jw-WAd9E/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=Dr6jw-WAd9E"
-  },
-  {
-    "video_id": "taCVT5vDAk0",
-    "channel": "Yannic Kilcher",
-    "title": "TiDAR: Think in Diffusion, Talk in Autoregression (Paper Analysis)",
-    "published": "2025-12-27",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/taCVT5vDAk0/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=taCVT5vDAk0"
-  },
-  {
-    "video_id": "v67plFw1nMw",
-    "channel": "Yannic Kilcher",
-    "title": "Titans: Learning to Memorize at Test Time (Paper Analysis)",
-    "published": "2025-12-14",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/v67plFw1nMw/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=v67plFw1nMw"
-  },
-  {
-    "video_id": "Nao16-6l6dQ",
-    "channel": "Yannic Kilcher",
-    "title": "[Paper Analysis] The Free Transformer (and some Variational Autoencoder stuff)",
-    "published": "2025-11-01",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/Nao16-6l6dQ/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=Nao16-6l6dQ"
-  },
-  {
     "video_id": "QVJcdfkRpH8",
     "channel": "AI Explained",
     "title": "Claude Opus 4.7 - A New Frontier, in Performance … and Drama",
     "published": "2026-04-17",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/QVJcdfkRpH8/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8"
+    "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "txx6ec6MLNY",
     "channel": "AI Explained",
     "title": "Claude Mythos: Highlights from 244-page Release",
     "published": "2026-04-08",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/txx6ec6MLNY/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=txx6ec6MLNY"
+    "url": "https://www.youtube.com/watch?v=txx6ec6MLNY",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "s4tptozUJ8Y",
     "channel": "AI Explained",
     "title": "Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?",
     "published": "2026-03-26",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/s4tptozUJ8Y/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y"
-  },
-  {
-    "video_id": "zizoDORjmlQ",
-    "channel": "AI Explained",
-    "title": "What the New ChatGPT 5.4 Means for the World",
-    "published": "2026-03-06",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/zizoDORjmlQ/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=zizoDORjmlQ"
-  },
-  {
-    "video_id": "Cru804JMjPI",
-    "channel": "AI Explained",
-    "title": "Deadline Day for Autonomous AI Weapons &amp; Mass Surveillance",
-    "published": "2026-02-27",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/Cru804JMjPI/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=Cru804JMjPI"
+    "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "WufG1eBT0dU",
     "channel": "Matthew Berman",
     "title": "Evals: Stop guessing, start testing your AI features",
     "published": "2026-04-16",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/WufG1eBT0dU/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=WufG1eBT0dU"
+    "url": "https://www.youtube.com/watch?v=WufG1eBT0dU",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "4x1fl67d_Ag",
     "channel": "Matthew Berman",
     "title": "Start using MCP in DevTools today!",
     "published": "2026-01-29",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/4x1fl67d_Ag/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=4x1fl67d_Ag"
+    "url": "https://www.youtube.com/watch?v=4x1fl67d_Ag",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "YN04nNsg_L4",
     "channel": "Matthew Berman",
     "title": "Web AI use cases and strategies in the real world",
     "published": "2025-05-22",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/YN04nNsg_L4/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=YN04nNsg_L4"
-  },
-  {
-    "video_id": "yORy1IEHDKk",
-    "channel": "Matthew Berman",
-    "title": "Dialog over a popover #CSSPodcast",
-    "published": "2024-06-11",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/yORy1IEHDKk/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=yORy1IEHDKk"
+    "url": "https://www.youtube.com/watch?v=YN04nNsg_L4",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "Sk9tvyRSCgY",
     "channel": "Two Minute Papers",
     "title": "DeepMind’s New AI: A Gift To Humanity",
     "published": "2026-04-16",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/Sk9tvyRSCgY/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=Sk9tvyRSCgY"
+    "url": "https://www.youtube.com/watch?v=Sk9tvyRSCgY",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "Ersv1ogj7Jo",
     "channel": "Two Minute Papers",
     "title": "Anthropic’s New AI Solves Problems…By Cheating",
     "published": "2026-04-14",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/Ersv1ogj7Jo/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=Ersv1ogj7Jo"
+    "url": "https://www.youtube.com/watch?v=Ersv1ogj7Jo",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "mFSFvKquXwI",
     "channel": "Two Minute Papers",
     "title": "NVIDIA’s New AI Shouldn’t Work…But It Does",
     "published": "2026-04-11",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/mFSFvKquXwI/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=mFSFvKquXwI"
-  },
-  {
-    "video_id": "Io_GqmbNBbY",
-    "channel": "Two Minute Papers",
-    "title": "DeepMind’s New AI Just Changed Science Forever",
-    "published": "2026-03-27",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/Io_GqmbNBbY/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=Io_GqmbNBbY"
-  },
-  {
-    "video_id": "RDQ4vHAPNls",
-    "channel": "Two Minute Papers",
-    "title": "This Physics Breakthrough Looks Impossible",
-    "published": "2026-03-12",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/RDQ4vHAPNls/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=RDQ4vHAPNls"
+    "url": "https://www.youtube.com/watch?v=mFSFvKquXwI",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "piah4fV_o2Q",
     "channel": "Fireship",
     "title": "Millions of WordPress sites just got hacked... again",
     "published": "2026-04-16",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/piah4fV_o2Q/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=piah4fV_o2Q"
+    "url": "https://www.youtube.com/watch?v=piah4fV_o2Q",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "d3Qq-rkp_to",
     "channel": "Fireship",
     "title": "Claude Mythos is too dangerous for public consumption...",
     "published": "2026-04-10",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/d3Qq-rkp_to/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=d3Qq-rkp_to"
+    "url": "https://www.youtube.com/watch?v=d3Qq-rkp_to",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   },
   {
     "video_id": "-01ZCTt-CJw",
     "channel": "Fireship",
     "title": "Google just casually disrupted the open-source AI narrative…",
     "published": "2026-04-08",
-    "summary": "Error generating summary.",
-    "topics": "Error",
     "thumbnail": "https://i.ytimg.com/vi/-01ZCTt-CJw/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=-01ZCTt-CJw"
-  },
-  {
-    "video_id": "JSuS-zXMVwE",
-    "channel": "Fireship",
-    "title": "Cursor ditches VS Code, but not everyone is happy...",
-    "published": "2026-04-06",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/JSuS-zXMVwE/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=JSuS-zXMVwE"
-  },
-  {
-    "video_id": "mBHRPeg8zPU",
-    "channel": "Fireship",
-    "title": "Tragic mistake... Anthropic leaks Claude’s source code",
-    "published": "2026-04-01",
-    "summary": "Error generating summary.",
-    "topics": "Error",
-    "thumbnail": "https://i.ytimg.com/vi/mBHRPeg8zPU/mqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=mBHRPeg8zPU"
+    "url": "https://www.youtube.com/watch?v=-01ZCTt-CJw",
+    "speaker": "N/A",
+    "summary": "Error analyzing content.",
+    "topics": [],
+    "sentiment": "N/A",
+    "references": []
   }
 ]
