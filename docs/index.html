@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM YouTube Tracker</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 1400px; margin: auto; padding: 20px; background: #f5f5f5; }
+    h1 { color: #1a1a2e; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    th { background: #1a1a2e; color: white; padding: 12px 16px; text-align: left; font-size: 14px; }
+    td { padding: 12px 16px; border-bottom: 1px solid #eee; font-size: 13px; vertical-align: top; }
+    tr:hover td { background: #f9f9ff; }
+    .channel { font-weight: bold; color: #4a90e2; white-space: nowrap; }
+    .title a { color: #1a1a2e; text-decoration: none; font-weight: 500; }
+    .title a:hover { text-decoration: underline; }
+    .topics { background: #e8f4fd; padding: 3px 8px; border-radius: 12px; font-size: 11px; color: #2c7be5; }
+    .summary { color: #444; line-height: 1.5; max-width: 400px; }
+    .date { color: #888; white-space: nowrap; }
+    img.thumb { width: 120px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>🤖 LLM YouTube Landscape Tracker</h1>
+  <p class="meta">Auto-updated daily via GitHub Actions · Last loaded: <span id="ts"></span> · <span id="count"></span> videos tracked</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Thumbnail</th>
+        <th>Channel</th>
+        <th>Title</th>
+        <th>Published</th>
+        <th>Topics</th>
+        <th>AI Summary</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <script>
+    document.getElementById('ts').textContent = new Date().toLocaleString();
+    fetch('data.json')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('count').textContent = data.length;
+        const tbody = document.getElementById('tbody');
+        data.forEach(v => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><a href="${v.url}" target="_blank"><img class="thumb" src="${v.thumbnail}" alt="thumb"></a></td>
+            <td class="channel">${v.channel}</td>
+            <td class="title"><a href="${v.url}" target="_blank">${v.title}</a></td>
+            <td class="date">${v.published}</td>
+            <td><span class="topics">${v.topics}</span></td>
+            <td class="summary">${v.summary}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      });
+  </script>
+</body>
+</html>
