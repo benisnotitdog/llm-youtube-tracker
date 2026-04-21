@@ -66,7 +66,6 @@ def get_smart_transcript(video_id):
         if len(data) <= 150:
             return " ".join([t['text'] for t in data])
 
-        # 抓取開頭 50 句 (通常有自我介紹), 中間 50 句, 結尾 50 句 (通常有總結與情緒)
         mid = len(data) // 2
         head = " ".join([t['text'] for t in data[:50]])
         body = " ".join([t['text'] for t in data[mid-25:mid+25]])
@@ -77,7 +76,7 @@ def get_smart_transcript(video_id):
         return None
 
 def analyze_with_llm(title, channel_name, transcript, retries=3):
-    """使用 OpenRouter 分析內容，針對主講人與情緒優化 Prompt"""
+    """使用 OpenRouter 分析內容，具備 JSON 格式校正與異常處理"""
     content = transcript if transcript else "No transcript available. Use title/channel only."
     
     prompt = f"""
@@ -85,14 +84,14 @@ def analyze_with_llm(title, channel_name, transcript, retries=3):
     
     VIDEO DATA:
     Title: {title}
-    Channel Context: {channel_name}
+    Channel: {channel_name}
     Transcript Snippets: {content}
 
     TASK:
-    Return a JSON object with:
-    1. "speaker": Identify the speaker. If not explicitly named in transcript, check if it's likely '{channel_name}'.
+    Return ONLY a JSON object with:
+    1. "speaker": Person name (if unknown, use '{channel_name}').
     2. "summary": A 2-sentence concise summary in Traditional Chinese.
-    3. "sentiment": Analyze the tone (e.g., "Excited/Optimistic", "Critical/Warning", "Educational/Neutral"). Avoid just "Neutral" if possible.
+    3. "sentiment": Analyze the tone (e.g., "Excited/Optimistic", "Critical/Warning", "Educational/Neutral").
     4. "topics": A list of 3-5 tags in English.
     """
 
@@ -105,9 +104,17 @@ def analyze_with_llm(title, channel_name, transcript, retries=3):
             )
             
             raw_res = response.choices[0].message.content
-            # 清理 Markdown 可能帶有的 ```json 標記
             clean_res = re.sub(r"```json|```", "", raw_res).strip()
-            return json.loads(clean_res)
+            data = json.loads(clean_res)
+            
+            # 確保回傳是字典而非列表
+            if isinstance(data, list) and len(data) > 0:
+                data = data[0]
+            
+            if not isinstance(data, dict):
+                raise ValueError("Format error")
+                
+            return data
             
         except Exception as e:
             if "429" in str(e) and attempt < retries - 1:
@@ -115,8 +122,15 @@ def analyze_with_llm(title, channel_name, transcript, retries=3):
                 print(f"      [!] Rate limited. Waiting {wait_time}s...")
                 time.sleep(wait_time)
                 continue
-            print(f"      [!] LLM Error: {str(e)[:100]}")
-            return {"speaker": channel_name, "summary": "暫時無法產生摘要。", "sentiment": "Unknown", "topics": ["Error"]}
+            print(f"      [!] Analysis logic error: {str(e)[:50]}")
+            
+    # 最後的保底方案
+    return {
+        "speaker": channel_name, 
+        "summary": "分析處理中或暫時無法產生摘要。", 
+        "sentiment": "Neutral", 
+        "topics": ["AI News"]
+    }
 
 def run():
     existing_data = load_existing_data()
@@ -130,10 +144,10 @@ def run():
             v_id = v["id"]["videoId"]
             title = v["snippet"]["title"]
             
-            # 快取邏輯：如果已有成功紀錄則跳過
+            # 只有在摘要正常時才跳過，否則重新分析
             if v_id in existing_data:
                 old_v = existing_data[v_id]
-                if "暫時無法" not in old_v.get("summary", ""):
+                if "無法產生" not in old_v.get("summary", "") and "Error" not in old_v.get("summary", ""):
                     print(f"  - Skipping: {title[:40]}")
                     results.append(old_v)
                     continue
@@ -142,15 +156,20 @@ def run():
             transcript = get_smart_transcript(v_id)
             analysis = analyze_with_llm(title, channel_name, transcript)
 
-            results.append({
+            # 建立基礎資訊字典
+            video_entry = {
                 "video_id": v_id,
                 "channel": channel_name,
                 "title": title,
                 "published": v["snippet"]["publishedAt"][:10],
                 "thumbnail": v["snippet"]["thumbnails"]["medium"]["url"],
-                "url": f"[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=){v_id}",
-                **analysis
-            })
+                "url": f"https://www.youtube.com/watch?v={v_id}"
+            }
+            
+            # 合併 AI 分析結果
+            video_entry.update(analysis)
+            results.append(video_entry)
+            
             time.sleep(5)
 
     os.makedirs("docs", exist_ok=True)
@@ -159,7 +178,7 @@ def run():
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
     
-    print(f"\n✅ All done! {len(results)} videos in database.")
+    print(f"\n✅ Finished! Database updated with {len(results)} videos.")
 
 if __name__ == "__main__":
     run()
