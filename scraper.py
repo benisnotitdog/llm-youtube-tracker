@@ -6,7 +6,6 @@ from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
 from openai import OpenAI
 
-
 load_dotenv()
 
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
@@ -41,68 +40,76 @@ def get_latest_videos(channel_id, max_results=5):
 
 def get_transcript(video_id):
     try:
-        # 新版 youtube-transcript-api 的正確寫法
         ytt = YouTubeTranscriptApi()
         transcript_list = ytt.list(video_id)
-        
-        # 優先找英文字幕
         try:
             transcript = transcript_list.find_transcript(['en', 'en-US', 'en-GB'])
         except Exception:
-            # 沒有英文就找第一個可用的，然後翻譯成英文
-            transcript = transcript_list.find_generated_transcript(['en'])
-            
+            try:
+                transcript = transcript_list.find_generated_transcript(['en'])
+            except Exception:
+                # 取第一個可用的字幕
+                transcript = next(iter(transcript_list))
         data = transcript.fetch()
         text = " ".join([t.text for t in data])
         return text[:5000]
     except Exception as e:
-        print(f"      [!] Transcript error for {video_id}: {str(e)}")
+        print(f"      [!] Transcript error for {video_id}: {str(e)[:80]}")
         return None
 
 def summarize(title, transcript):
     if not transcript:
-        transcript_excerpt = "No transcript could be extracted. Please infer the content entirely based on the video title."
+        transcript_excerpt = "No transcript available. Infer from title only."
     else:
         transcript_excerpt = transcript
 
-    prompt = f"""You are analyzing a YouTube video about Large Language Models (LLMs).
+    prompt = f"""You are analyzing a YouTube video about AI and Large Language Models (LLMs).
 Video Title: {title}
 Transcript Excerpt: {transcript_excerpt}
 
-Task 1: In 2-3 sentences, summarize the specific models, techniques, or news covered. Focus strictly on what the creator actually discusses.
-Task 2: Provide exactly 2-3 short, broad category tags that describe this video's relationship to the broader LLM ecosystem (e.g., "Paper Analysis", "AI News", "Coding & DevTools", "Model Benchmarking", "Ethics & Safety").
+Task 1: In 2-3 sentences, summarize the specific models, techniques, or news covered.
+Task 2: Provide exactly 2-3 short category tags (e.g., "Paper Analysis", "AI News", "Coding & DevTools", "Model Benchmarking", "Ethics & Safety", "Model Release").
 
-Format your response EXACTLY like this:
+Format EXACTLY like this (no extra text):
 SUMMARY: <your summary here>
 TAGS: <tag1>, <tag2>
 """
-    
-    try:
-        time.sleep(8)  # 避免超過每分鐘8次的速率限制
-        response = client.chat.completions.create(
-            model="meta-llama/llama-3.3-70b-instruct:free",
-            messages=[{"role": "user", "content": prompt}]
-        )
-        content = response.choices[0].message.content.strip()
-        
-        summary_part = "Failed to parse summary."
-        tags_part = "Uncategorized"
-        
-        for line in content.split("\n"):
-            if line.startswith("SUMMARY:"):
-                summary_part = line.replace("SUMMARY:", "").strip()
-            elif line.startswith("TAGS:"):
-                tags_part = line.replace("TAGS:", "").strip()
-                
-        return summary_part, tags_part
 
-    except Exception as e:
-        return f"Error generating summary: {str(e)}", "Error"
+    for attempt in range(3):  # 最多重試3次
+        try:
+            time.sleep(10)  # 每次呼叫前等10秒，確保不超過rate limit
+            response = client.chat.completions.create(
+                model="mistralai/mistral-7b-instruct:free",  # 備用免費模型
+                messages=[{"role": "user", "content": prompt}]
+            )
+            content = response.choices[0].message.content.strip()
+
+            summary_part = "No summary available."
+            tags_part = "General LLM"
+
+            for line in content.split("\n"):
+                if line.startswith("SUMMARY:"):
+                    summary_part = line.replace("SUMMARY:", "").strip()
+                elif line.startswith("TAGS:"):
+                    tags_part = line.replace("TAGS:", "").strip()
+
+            return summary_part, tags_part
+
+        except Exception as e:
+            err = str(e)
+            if "429" in err:
+                print(f"      [!] Rate limited, waiting 30s before retry {attempt+1}/3...")
+                time.sleep(30)
+            else:
+                print(f"      [!] Summarize error: {err[:80]}")
+                return "Error generating summary.", "Error"
+
+    return "Rate limit exceeded after retries.", "Error"
 
 def run():
     results = []
     for channel_name, channel_id in CHANNELS.items():
-        print(f"Fetching: {channel_name}")
+        print(f"\nFetching: {channel_name}")
         videos = get_latest_videos(channel_id)
         for v in videos:
             video_id = v["id"]["videoId"]
@@ -110,9 +117,8 @@ def run():
             published = v["snippet"]["publishedAt"]
             thumbnail = v["snippet"]["thumbnails"]["medium"]["url"]
             url = f"https://www.youtube.com/watch?v={video_id}"
-            
-            print(f"  > Processing: {title[:50]}...")
 
+            print(f"  > {title[:60]}")
             transcript = get_transcript(video_id)
             summary, topics = summarize(title, transcript)
 
