@@ -1,5 +1,5 @@
 # Technical Report: LLM YouTube Landscape Tracker (v2.0)
-
+https://benisnotitdog.github.io/llm-youtube-tracker/
 ## 1. Executive Summary
 The **LLM YouTube Landscape Tracker** is an automated pipeline designed to monitor, analyze, and categorize technical discourse within the Large Language Model (LLM) ecosystem. By integrating the YouTube Data API, Large Language Models (Gemini 2.0), and GitHub Actions, the system transforms unstructured video content into a structured, searchable knowledge base.
 
