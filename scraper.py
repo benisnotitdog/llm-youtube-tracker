@@ -33,6 +33,7 @@ client = OpenAI(
 )
 
 def load_existing_data():
+    """載入既有數據以實現快取功能"""
     if os.path.exists(DATA_FILE):
         try:
             with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -42,11 +43,18 @@ def load_existing_data():
     return {}
 
 def get_uploads_playlist_id(channel_id):
-    """獲取頻道的『所有上傳影片』播放清單 ID (僅消耗 1 unit)"""
-    res = youtube.channels().list(part="contentDetails", id=channel_id).execute()
-    return res["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    """獲取頻道的『所有上傳影片』播放清單 ID (消耗 1 unit)"""
+    try:
+        res = youtube.channels().list(part="contentDetails", id=channel_id).execute()
+        if "items" not in res or not res["items"]:
+            return None
+        return res["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    except Exception as e:
+        print(f"❌ 取得播放清單 ID 失敗 ({channel_id}): {e}")
+        return None
 
 def get_smart_transcript(video_id):
+    """提取影片逐字稿"""
     try:
         ts_list = YouTubeTranscriptApi.list_transcripts(video_id)
         try:
@@ -58,16 +66,17 @@ def get_smart_transcript(video_id):
         return "No transcript available."
 
 def analyze_with_llm(title, channel, transcript):
+    """使用 AI 進行結構化分析"""
     prompt = f"""
-    分析這部 AI 影片：
+    請分析這部 AI 技術影片並提供結構化摘要：
     標題：{title}
     頻道：{channel}
     部分逐字稿：{transcript}
     
-    請回傳 JSON 格式：
+    請務必回傳 JSON 格式：
     {{
       "summary": "100字內中文核心摘要",
-      "sentiment": "單詞情緒 (如 Analytical, Educational, Urgent)",
+      "sentiment": "單詞情緒 (例如 Analytical, Educational, Urgent)",
       "speaker": "主要講者名稱",
       "topics": ["標籤1", "標籤2", "標籤3"]
     }}
@@ -91,29 +100,36 @@ def run_scraper():
     existing_data = load_existing_data()
     results = []
     
-    try:
-        for channel_name, channel_id in CHANNELS.items():
-            print(f"正在檢查頻道: {channel_name}...")
-            
-            # 使用播放清單獲取，極度節省 Quota
-            uploads_id = get_uploads_playlist_id(channel_id)
+    # 確保目錄存在
+    os.makedirs("docs", exist_ok=True)
+
+    for channel_name, channel_id in CHANNELS.items():
+        print(f"正在檢查頻道: {channel_name}...")
+        
+        uploads_id = get_uploads_playlist_id(channel_id)
+        if not uploads_id:
+            print(f"  - 跳過頻道 {channel_name}，因為找不到上傳清單。")
+            continue
+        
+        try:
             res = youtube.playlistItems().list(
                 playlistId=uploads_id,
                 part="snippet",
                 maxResults=5
             ).execute()
 
-            for item in res.get("items", []):
+            items = res.get("items", [])
+            for item in items:
                 v_id = item["snippet"]["resourceId"]["videoId"]
                 title = item["snippet"]["title"]
                 
-                # 快取檢查
+                # 快取檢查：如果已分析過，直接沿用舊數據
                 if v_id in existing_data:
-                    print(f"  - 跳過已存在的影片: {title[:30]}")
+                    print(f"  - 跳過已存在的影片: {title[:20]}...")
                     results.append(existing_data[v_id])
                     continue
 
-                print(f"  + 分析新影片: {title[:30]}...")
+                print(f"  + 正在分析新影片: {title[:20]}...")
                 transcript = get_smart_transcript(v_id)
                 analysis = analyze_with_llm(title, channel_name, transcript)
 
@@ -127,28 +143,30 @@ def run_scraper():
                 }
                 video_entry.update(analysis)
                 results.append(video_entry)
-                time.sleep(2)
+                time.sleep(1) 
 
-        # --- 防呆與備份機制 ---
-        if not results:
-            print("⚠️ 錯誤：未獲取到任何數據，停止寫入以保護現有檔案。")
-            return
+        except Exception as e:
+            print(f"  - 抓取頻道影片時發生錯誤: {e}")
+            continue
 
-        # 執行備份
-        if os.path.exists(DATA_FILE):
-            os.makedirs(BACKUP_DIR, exist_ok=True)
-            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
-            shutil.copy(DATA_FILE, f"{BACKUP_DIR}/data_{timestamp}.json")
-            print(f"📦 已建立數據備份: data_{timestamp}.json")
+    # --- 最終寫入與保護機制 ---
+    if not results:
+        print("⚠️ 錯誤：本次執行未獲得任何影片數據，中止寫入。")
+        return
 
-        # 排序並寫入 docs/data.json
-        results.sort(key=lambda x: x["published"], reverse=True)
-        with open(DATA_FILE, "w", encoding="utf-8") as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
-        print(f"✅ 成功更新 {len(results)} 部影片數據。")
+    # 備份舊檔案
+    if os.path.exists(DATA_FILE):
+        os.makedirs(BACKUP_DIR, exist_ok=True)
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+        shutil.copy(DATA_FILE, f"{BACKUP_DIR}/data_{timestamp}.json")
+        print(f"📦 已建立數據備份: {BACKUP_DIR}/data_{timestamp}.json")
 
-    except Exception as e:
-        print(f"❌ 執行過程中發生錯誤: {e}")
+    # 排序並儲存
+    results.sort(key=lambda x: x["published"], reverse=True)
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+    
+    print(f"✅ 成功更新資料，目前共累積 {len(results)} 部影片。")
 
 if __name__ == "__main__":
     run_scraper()
