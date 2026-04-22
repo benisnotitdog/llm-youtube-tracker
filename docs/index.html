@@ -11,58 +11,51 @@
       --bg-gray: #f8fafc;
       --border-color: #e2e8f0;
     }
-    body { font-family: 'Inter', -apple-system, sans-serif; max-width: 1500px; margin: auto; padding: 30px; background: var(--bg-gray); color: #1e293b; }
-    header { margin-bottom: 30px; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; }
-    h1 { color: var(--primary-dark); margin: 0; display: flex; align-items: center; gap: 10px; }
-    .meta { color: #64748b; font-size: 14px; margin-top: 10px; }
+    body { font-family: 'Inter', system-ui, sans-serif; max-width: 1500px; margin: auto; padding: 30px; background: var(--bg-gray); color: #1e293b; }
     
+    /* 搜尋與控制區 */
+    .controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; gap: 15px; }
+    .search-box { flex-grow: 1; position: relative; }
+    .search-box input { width: 100%; padding: 12px 15px; border-radius: 10px; border: 1px solid var(--border-color); font-size: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .sort-btn { padding: 12px 20px; background: white; border: 1px solid var(--border-color); border-radius: 10px; cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: 8px; transition: all 0.2s; }
+    .sort-btn:hover { background: var(--bg-gray); border-color: var(--accent-blue); }
+
+    /* 表格樣式 */
     table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
-    th { background: var(--primary-dark); color: #f8fafc; padding: 15px 20px; text-align: left; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; }
-    td { padding: 18px 20px; border-bottom: 1px solid var(--border-color); font-size: 14px; vertical-align: top; line-height: 1.6; }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #f1f5f9; }
-
-    .channel-box { display: flex; flex-direction: column; gap: 8px; width: 150px; }
-    .channel-name { font-weight: 700; color: var(--accent-blue); font-size: 13px; }
-    .thumb { width: 140px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-
-    .title-box { max-width: 300px; }
-    .title-box a { color: var(--primary-dark); text-decoration: none; font-weight: 600; font-size: 15px; display: block; margin-bottom: 5px; }
-    .title-box a:hover { color: var(--accent-blue); }
-    .date { color: #94a3b8; font-size: 12px; }
-
-    .speaker-box { font-size: 13px; }
-    .speaker-name { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-weight: 500; }
-
-    .badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-top: 5px; }
-    .sentiment-bullish { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
-    .sentiment-skeptical { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
-    .sentiment-neutral { background: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
-
-    .tag-container { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
-    .tag { background: #eff6ff; color: #1d4ed8; padding: 2px 8px; border-radius: 4px; font-size: 11px; border: 1px solid #dbeafe; }
-    .ref-tag { background: #f5f3ff; color: #5b21b6; border: 1px solid #ddd6fe; }
-
-    .summary-text { color: #334155; font-size: 14px; }
+    th { background: #f1f5f9; padding: 15px; text-align: left; font-size: 13px; text-transform: uppercase; color: #64748b; }
+    td { padding: 20px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+    
+    .thumb { width: 160px; border-radius: 8px; margin-bottom: 8px; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; margin-top: 5px; }
+    .tag { display: inline-block; background: #f1f5f9; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin: 2px; }
+    .sentiment-positive { background: #dcfce7; color: #166534; }
+    .sentiment-neutral { background: #f1f5f9; color: #475569; }
+    .sentiment-urgent { background: #fee2e2; color: #991b1b; }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>📡 LLM YouTube Landscape Tracker</h1>
-    <p class="meta">
-      R&D 監控實驗室 · 自動掃描最新 AI 動態 · 
-      目前追蹤: <span id="count">0</span> 部影片 · 
-      最後更新: <span id="ts"></span>
-    </p>
+    <h1>📡 LLM 研究追蹤器 v2.0</h1>
+    <p style="color: #64748b;">自動化分析 AI 領域最新影片動向</p>
   </header>
+
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 搜尋影片標題、頻道、講者或關鍵字...">
+    </div>
+    <button class="sort-btn" onclick="toggleSort()">
+      <span id="sortIcon">📅</span> <span id="sortText">發佈日期: 由新到舊</span>
+    </button>
+  </div>
 
   <table>
     <thead>
       <tr>
-        <th>來源頻道</th>
-        <th>標題與日期</th>
-        <th>主講與情緒</th>
-        <th>深度研究摘要 (AI Insights)</th>
+        <th width="15%">來源</th>
+        <th width="30%">影片內容</th>
+        <th width="15%">AI 分析</th>
+        <th width="40%">摘要與標籤</th>
       </tr>
     </thead>
     <tbody id="tbody">
@@ -70,80 +63,76 @@
   </table>
 
   <script>
-    document.getElementById('ts').textContent = new Date().toLocaleString();
+    let allVideos = [];
+    let isDescending = true;
 
-    function getSentimentClass(sentiment) {
-      if (!sentiment) return 'sentiment-neutral';
-      const s = sentiment.toLowerCase();
-      if (s.includes('bullish') || s.includes('看好') || s.includes('樂觀')) return 'sentiment-bullish';
-      if (s.includes('skeptical') || s.includes('懷疑') || s.includes('批評')) return 'sentiment-skeptical';
-      return 'sentiment-neutral';
+    async function loadData() {
+      try {
+        const res = await fetch('data.json');
+        allVideos = await res.json();
+        renderTable(allVideos);
+      } catch (err) {
+        document.getElementById('tbody').innerHTML = '<tr><td colspan="4" style="text-align:center; padding:50px; color:red;">無法載入數據，請檢查 data.json。</td></tr>';
+      }
     }
 
-    fetch('data.json')
-      .then(r => r.json())
-      .then(data => {
-        document.getElementById('count').textContent = data.length;
-        const tbody = document.getElementById('tbody');
+    function renderTable(data) {
+      const tbody = document.getElementById('tbody');
+      tbody.innerHTML = '';
+      
+      data.forEach(v => {
+        const tr = document.createElement('tr');
+        const sentimentClass = v.sentiment?.includes('Urgent') ? 'sentiment-urgent' : 
+                               v.sentiment?.includes('Analytical') ? 'sentiment-positive' : 'sentiment-neutral';
         
-        // 按照日期排序 (由新到舊)
-        data.sort((a, b) => new Date(b.published) - new Date(a.published));
+        const topicTags = (v.topics || []).map(t => `<span class="tag">${t}</span>`).join('');
 
-        data.forEach(v => {
-          const tr = document.createElement('tr');
-          
-          // 處理 Topics 標籤
-          const topicTags = Array.isArray(v.topics) 
-            ? v.topics.map(t => `<span class="tag">${t}</span>`).join('')
-            : `<span class="tag">${v.topics}</span>`;
-
-          // 處理 References 標籤
-          const refTags = Array.isArray(v.references) && v.references.length > 0
-            ? v.references.map(r => `<span class="tag ref-tag">${r}</span>`).join('')
-            : '<span style="color:#cbd5e1; font-size:11px;">無提及</span>';
-
-          const sentimentClass = getSentimentClass(v.sentiment);
-
-          tr.innerHTML = `
-            <td>
-              <div class="channel-box">
-                <img class="thumb" src="${v.thumbnail}" alt="thumb">
-                <span class="channel-name">@${v.channel}</span>
-              </div>
-            </td>
-            <td>
-              <div class="title-box">
-                <a href="${v.url}" target="_blank">${v.title}</a>
-                <span class="date">📅 發佈日期: ${v.published}</span>
-              </div>
-            </td>
-            <td>
-              <div class="speaker-box">
-                <div>👤 <span class="speaker-name">${v.speaker || '未知'}</span></div>
-                <div class="badge ${sentimentClass}">${v.sentiment || '中立'}</div>
-              </div>
-            </td>
-            <td>
-              <div class="summary-text">
-                <strong>核心摘要:</strong> ${v.summary}
-              </div>
-              <div style="margin-top:10px;">
-                <strong>技術主題:</strong>
-                <div class="tag-container">${topicTags}</div>
-              </div>
-              <div style="margin-top:10px;">
-                <strong>提及引用 (References):</strong>
-                <div class="tag-container">${refTags}</div>
-              </div>
-            </td>
-          `;
-          tbody.appendChild(tr);
-        });
-      })
-      .catch(err => {
-        console.error("載入數據失敗:", err);
-        document.getElementById('tbody').innerHTML = '<tr><td colspan="4" style="text-align:center; padding:50px; color:red;">數據加載失敗，請確保 data.json 存在於 docs 目錄下。</td></tr>';
+        tr.innerHTML = `
+          <td>
+            <img src="${v.thumbnail}" class="thumb"><br>
+            <strong>@${v.channel}</strong>
+          </td>
+          <td>
+            <a href="${v.url}" target="_blank" style="text-decoration:none; color:var(--primary-dark); font-weight:700; font-size:16px;">${v.title}</a><br>
+            <small style="color:#64748b">📅 發佈日期: ${v.published}</small>
+          </td>
+          <td>
+            👤 <strong>${v.speaker || '未知'}</strong><br>
+            <span class="badge ${sentimentClass}">${v.sentiment || 'Neutral'}</span>
+          </td>
+          <td>
+            <p style="margin:0 0 10px 0; line-height:1.5; font-size:14px;">${v.summary}</p>
+            <div>${topicTags}</div>
+          </td>
+        `;
+        tbody.appendChild(tr);
       });
+    }
+
+    // 搜尋功能
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      const filtered = allVideos.filter(v => 
+        v.title.toLowerCase().includes(term) || 
+        v.channel.toLowerCase().includes(term) ||
+        (v.speaker && v.speaker.toLowerCase().includes(term)) ||
+        v.topics.some(t => t.toLowerCase().includes(term))
+      );
+      renderTable(filtered);
+    });
+
+    // 排序功能
+    function toggleSort() {
+      isDescending = !isDescending;
+      document.getElementById('sortText').innerText = isDescending ? "發佈日期: 由新到舊" : "發佈日期: 由舊到新";
+      
+      allVideos.sort((a, b) => {
+        return isDescending ? new Date(b.published) - new Date(a.published) : new Date(a.published) - new Date(b.published);
+      });
+      renderTable(allVideos);
+    }
+
+    loadData();
   </script>
 </body>
 </html>

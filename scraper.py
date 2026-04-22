@@ -1,8 +1,8 @@
 import os
 import json
 import time
-import random
-import re
+import datetime
+import shutil
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -14,6 +14,7 @@ load_dotenv()
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 DATA_FILE = "docs/data.json"
+BACKUP_DIR = "docs/backup"
 
 # 設定追蹤的頻道
 CHANNELS = {
@@ -32,153 +33,122 @@ client = OpenAI(
 )
 
 def load_existing_data():
-    """載入既有的數據以實現快取功能"""
     if os.path.exists(DATA_FILE):
         try:
             with open(DATA_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 return {v["video_id"]: v for v in data}
-        except:
-            return {}
+        except: return {}
     return {}
 
-def get_latest_videos(channel_id, max_results=5):
-    """獲取頻道最新的影片"""
-    try:
-        res = youtube.search().list(
-            channelId=channel_id,
-            part="snippet",
-            order="date",
-            maxResults=max_results,
-            type="video"
-        ).execute()
-        return res.get("items", [])
-    except Exception as e:
-        print(f"Error fetching videos: {e}")
-        return []
+def get_uploads_playlist_id(channel_id):
+    """獲取頻道的『所有上傳影片』播放清單 ID (僅消耗 1 unit)"""
+    res = youtube.channels().list(part="contentDetails", id=channel_id).execute()
+    return res["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
 
 def get_smart_transcript(video_id):
-    """精確抓取前、中、後段逐字稿，優化 Token 並保留關鍵資訊"""
     try:
-        time.sleep(random.uniform(1, 2))
-        data = YouTubeTranscriptApi.get_transcript(video_id, languages=['en', 'en-US'])
-        
-        if len(data) <= 150:
-            return " ".join([t['text'] for t in data])
-
-        mid = len(data) // 2
-        head = " ".join([t['text'] for t in data[:50]])
-        body = " ".join([t['text'] for t in data[mid-25:mid+25]])
-        tail = " ".join([t['text'] for t in data[-50:]])
-        
-        return f"[START]\n{head}\n[MIDDLE]\n{body}\n[END]\n{tail}"
-    except:
-        return None
-
-def analyze_with_llm(title, channel_name, transcript, retries=3):
-    """使用 OpenRouter 分析內容，具備 JSON 格式校正與異常處理"""
-    content = transcript if transcript else "No transcript available. Use title/channel only."
-    
-    prompt = f"""
-    You are an expert AI news analyst. Analyze this YouTube video from the channel '{channel_name}'.
-    
-    VIDEO DATA:
-    Title: {title}
-    Channel: {channel_name}
-    Transcript Snippets: {content}
-
-    TASK:
-    Return ONLY a JSON object with:
-    1. "speaker": Person name (if unknown, use '{channel_name}').
-    2. "summary": A 2-sentence concise summary in Traditional Chinese.
-    3. "sentiment": Analyze the tone (e.g., "Excited/Optimistic", "Critical/Warning", "Educational/Neutral").
-    4. "topics": A list of 3-5 tags in English.
-    """
-
-    for attempt in range(retries):
+        ts_list = YouTubeTranscriptApi.list_transcripts(video_id)
         try:
-            response = client.chat.completions.create(
-                model="google/gemini-2.0-flash-001",
-                messages=[{"role": "user", "content": prompt}],
-                response_format={"type": "json_object"}
-            )
-            
-            raw_res = response.choices[0].message.content
-            clean_res = re.sub(r"```json|```", "", raw_res).strip()
-            data = json.loads(clean_res)
-            
-            # 確保回傳是字典而非列表
-            if isinstance(data, list) and len(data) > 0:
-                data = data[0]
-            
-            if not isinstance(data, dict):
-                raise ValueError("Format error")
-                
-            return data
-            
-        except Exception as e:
-            if "429" in str(e) and attempt < retries - 1:
-                wait_time = (attempt + 1) * 20
-                print(f"      [!] Rate limited. Waiting {wait_time}s...")
-                time.sleep(wait_time)
-                continue
-            print(f"      [!] Analysis logic error: {str(e)[:50]}")
-            
-    # 最後的保底方案
-    return {
-        "speaker": channel_name, 
-        "summary": "分析處理中或暫時無法產生摘要。", 
-        "sentiment": "Neutral", 
-        "topics": ["AI News"]
-    }
+            ts = ts_list.find_transcript(['en'])
+        except:
+            ts = ts_list.find_generated_transcript(['en'])
+        return " ".join([x['text'] for x in ts.fetch()[:100]])
+    except:
+        return "No transcript available."
 
-def run():
+def analyze_with_llm(title, channel, transcript):
+    prompt = f"""
+    分析這部 AI 影片：
+    標題：{title}
+    頻道：{channel}
+    部分逐字稿：{transcript}
+    
+    請回傳 JSON 格式：
+    {{
+      "summary": "100字內中文核心摘要",
+      "sentiment": "單詞情緒 (如 Analytical, Educational, Urgent)",
+      "speaker": "主要講者名稱",
+      "topics": ["標籤1", "標籤2", "標籤3"]
+    }}
+    """
+    try:
+        response = client.chat.completions.create(
+            model="google/gemini-2.0-flash:free",
+            messages=[{"role": "user", "content": prompt}],
+            response_format={ "type": "json_object" }
+        )
+        return json.loads(response.choices[0].message.content)
+    except:
+        return {
+            "summary": "無法自動產生摘要",
+            "sentiment": "Neutral",
+            "speaker": channel,
+            "topics": ["AI"]
+        }
+
+def run_scraper():
     existing_data = load_existing_data()
     results = []
-
-    for channel_name, channel_id in CHANNELS.items():
-        print(f"\nChecking: {channel_name}")
-        videos = get_latest_videos(channel_id)
-        
-        for v in videos:
-            v_id = v["id"]["videoId"]
-            title = v["snippet"]["title"]
+    
+    try:
+        for channel_name, channel_id in CHANNELS.items():
+            print(f"正在檢查頻道: {channel_name}...")
             
-            # 只有在摘要正常時才跳過，否則重新分析
-            if v_id in existing_data:
-                old_v = existing_data[v_id]
-                if "無法產生" not in old_v.get("summary", "") and "Error" not in old_v.get("summary", ""):
-                    print(f"  - Skipping: {title[:40]}")
-                    results.append(old_v)
+            # 使用播放清單獲取，極度節省 Quota
+            uploads_id = get_uploads_playlist_id(channel_id)
+            res = youtube.playlistItems().list(
+                playlistId=uploads_id,
+                part="snippet",
+                maxResults=5
+            ).execute()
+
+            for item in res.get("items", []):
+                v_id = item["snippet"]["resourceId"]["videoId"]
+                title = item["snippet"]["title"]
+                
+                # 快取檢查
+                if v_id in existing_data:
+                    print(f"  - 跳過已存在的影片: {title[:30]}")
+                    results.append(existing_data[v_id])
                     continue
 
-            print(f"  + Analyzing: {title[:40]}...")
-            transcript = get_smart_transcript(v_id)
-            analysis = analyze_with_llm(title, channel_name, transcript)
+                print(f"  + 分析新影片: {title[:30]}...")
+                transcript = get_smart_transcript(v_id)
+                analysis = analyze_with_llm(title, channel_name, transcript)
 
-            # 建立基礎資訊字典
-            video_entry = {
-                "video_id": v_id,
-                "channel": channel_name,
-                "title": title,
-                "published": v["snippet"]["publishedAt"][:10],
-                "thumbnail": v["snippet"]["thumbnails"]["medium"]["url"],
-                "url": f"https://www.youtube.com/watch?v={v_id}"
-            }
-            
-            # 合併 AI 分析結果
-            video_entry.update(analysis)
-            results.append(video_entry)
-            
-            time.sleep(5)
+                video_entry = {
+                    "video_id": v_id,
+                    "channel": channel_name,
+                    "title": title,
+                    "published": item["snippet"]["publishedAt"][:10],
+                    "thumbnail": item["snippet"]["thumbnails"]["medium"]["url"],
+                    "url": f"https://www.youtube.com/watch?v={v_id}"
+                }
+                video_entry.update(analysis)
+                results.append(video_entry)
+                time.sleep(2)
 
-    os.makedirs("docs", exist_ok=True)
-    results.sort(key=lambda x: x["published"], reverse=True)
+        # --- 防呆與備份機制 ---
+        if not results:
+            print("⚠️ 錯誤：未獲取到任何數據，停止寫入以保護現有檔案。")
+            return
 
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-    
-    print(f"\n✅ Finished! Database updated with {len(results)} videos.")
+        # 執行備份
+        if os.path.exists(DATA_FILE):
+            os.makedirs(BACKUP_DIR, exist_ok=True)
+            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+            shutil.copy(DATA_FILE, f"{BACKUP_DIR}/data_{timestamp}.json")
+            print(f"📦 已建立數據備份: data_{timestamp}.json")
+
+        # 排序並寫入 docs/data.json
+        results.sort(key=lambda x: x["published"], reverse=True)
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+        print(f"✅ 成功更新 {len(results)} 部影片數據。")
+
+    except Exception as e:
+        print(f"❌ 執行過程中發生錯誤: {e}")
 
 if __name__ == "__main__":
-    run()
+    run_scraper()

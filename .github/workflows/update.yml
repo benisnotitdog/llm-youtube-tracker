@@ -37,3 +37,12 @@ jobs:
           git add docs/data.json
           git commit -m "chore: auto-update video data [skip ci]" || echo "No changes to commit"
           git push
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/data.json
+          git add docs/backup/*.json  # 這是關鍵，確保備份檔也被追蹤
+          git commit -m "Auto-update: YouTube data and backup" || exit 0
+          git push
