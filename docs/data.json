@@ -1,5 +1,33 @@
 [
   {
+    "video_id": "ji08ILsXQ7M",
+    "channel": "Matthew Berman",
+    "title": "Your mental model for AI testing: evals, LLM judges, and test layering",
+    "published": "2026-04-21",
+    "thumbnail": "https://i.ytimg.com/vi/ji08ILsXQ7M/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=ji08ILsXQ7M",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "jeA-KBv0b68",
+    "channel": "Fireship",
+    "title": "Claude just got another superpower...",
+    "published": "2026-04-21",
+    "thumbnail": "https://i.ytimg.com/vi/jeA-KBv0b68/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=jeA-KBv0b68",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Fireship",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
     "video_id": "QVJcdfkRpH8",
     "channel": "AI Explained",
     "title": "Claude Opus 4.7 - A New Frontier, in Performance … and Drama",
@@ -18,6 +46,118 @@
     ]
   },
   {
+    "video_id": "WufG1eBT0dU",
+    "channel": "Matthew Berman",
+    "title": "Evals: Stop guessing, start testing your AI features",
+    "published": "2026-04-16",
+    "thumbnail": "https://i.ytimg.com/vi/WufG1eBT0dU/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=WufG1eBT0dU",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "Sk9tvyRSCgY",
+    "channel": "Two Minute Papers",
+    "title": "DeepMind’s New AI: A Gift To Humanity",
+    "published": "2026-04-16",
+    "thumbnail": "https://i.ytimg.com/vi/Sk9tvyRSCgY/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=Sk9tvyRSCgY",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "piah4fV_o2Q",
+    "channel": "Fireship",
+    "title": "Millions of WordPress sites just got hacked... again",
+    "published": "2026-04-16",
+    "thumbnail": "https://i.ytimg.com/vi/piah4fV_o2Q/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=piah4fV_o2Q",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Fireship",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "hq1nZM3mohs",
+    "channel": "Matthew Berman",
+    "title": "3 things you didn’t know about the Prompt API",
+    "published": "2026-04-15",
+    "thumbnail": "https://i.ytimg.com/vi/hq1nZM3mohs/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=hq1nZM3mohs",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "Ersv1ogj7Jo",
+    "channel": "Two Minute Papers",
+    "title": "Anthropic’s New AI Solves Problems…By Cheating",
+    "published": "2026-04-14",
+    "thumbnail": "https://i.ytimg.com/vi/Ersv1ogj7Jo/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=Ersv1ogj7Jo",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "mFSFvKquXwI",
+    "channel": "Two Minute Papers",
+    "title": "NVIDIA’s New AI Shouldn’t Work…But It Does",
+    "published": "2026-04-11",
+    "thumbnail": "https://i.ytimg.com/vi/mFSFvKquXwI/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=mFSFvKquXwI",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "G2li2xagzfY",
+    "channel": "Matthew Berman",
+    "title": "Meet our team's MVP lineup",
+    "published": "2026-04-10",
+    "thumbnail": "https://i.ytimg.com/vi/G2li2xagzfY/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=G2li2xagzfY",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "d3Qq-rkp_to",
+    "channel": "Fireship",
+    "title": "Claude Mythos is too dangerous for public consumption...",
+    "published": "2026-04-10",
+    "thumbnail": "https://i.ytimg.com/vi/d3Qq-rkp_to/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=d3Qq-rkp_to",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Fireship",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
     "video_id": "txx6ec6MLNY",
     "channel": "AI Explained",
     "title": "Claude Mythos: Highlights from 244-page Release",
@@ -33,6 +173,76 @@
       "AI Model",
       "AI Release",
       "Large Language Models"
+    ]
+  },
+  {
+    "video_id": "-01ZCTt-CJw",
+    "channel": "Fireship",
+    "title": "Google just casually disrupted the open-source AI narrative…",
+    "published": "2026-04-08",
+    "thumbnail": "https://i.ytimg.com/vi/-01ZCTt-CJw/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=-01ZCTt-CJw",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Fireship",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "ZQAz_HrUq68",
+    "channel": "Two Minute Papers",
+    "title": "NVIDIA’s New AI Just Changed Everything",
+    "published": "2026-04-07",
+    "thumbnail": "https://i.ytimg.com/vi/ZQAz_HrUq68/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=ZQAz_HrUq68",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "Ve_LOtA3ghg",
+    "channel": "Matthew Berman",
+    "title": "Chrome DevTools 145+: stop guessing SPA performance",
+    "published": "2026-04-06",
+    "thumbnail": "https://i.ytimg.com/vi/Ve_LOtA3ghg/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=Ve_LOtA3ghg",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "JSuS-zXMVwE",
+    "channel": "Fireship",
+    "title": "Cursor ditches VS Code, but not everyone is happy...",
+    "published": "2026-04-06",
+    "thumbnail": "https://i.ytimg.com/vi/JSuS-zXMVwE/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=JSuS-zXMVwE",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Fireship",
+    "topics": [
+      "AI"
+    ]
+  },
+  {
+    "video_id": "7YVrb3-ABYE",
+    "channel": "Two Minute Papers",
+    "title": "Google’s New AI Just Broke My Brain",
+    "published": "2026-04-01",
+    "thumbnail": "https://i.ytimg.com/vi/7YVrb3-ABYE/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=7YVrb3-ABYE",
+    "summary": "無法自動產生摘要",
+    "sentiment": "Neutral",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI"
     ]
   },
   {

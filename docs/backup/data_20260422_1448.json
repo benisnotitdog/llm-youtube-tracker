@@ -1,0 +1,92 @@
+[
+  {
+    "video_id": "QVJcdfkRpH8",
+    "channel": "AI Explained",
+    "title": "Claude Opus 4.7 - A New Frontier, in Performance … and Drama",
+    "published": "2026-04-17",
+    "thumbnail": "https://i.ytimg.com/vi/QVJcdfkRpH8/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
+    "speaker": "AI Explained Host",
+    "summary": "This video explores the performance of the new Claude Opus 4.7 model, comparing it to previous versions and competitors while discussing release drama.",
+    "sentiment": "Analytical/Critical",
+    "topics": [
+      "Claude",
+      "AI",
+      "Performance",
+      "Opus 4.7",
+      "Drama"
+    ]
+  },
+  {
+    "video_id": "txx6ec6MLNY",
+    "channel": "AI Explained",
+    "title": "Claude Mythos: Highlights from 244-page Release",
+    "published": "2026-04-08",
+    "thumbnail": "https://i.ytimg.com/vi/txx6ec6MLNY/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=txx6ec6MLNY",
+    "speaker": "AI Explained Host",
+    "summary": "Key takeaways from Anthropic's extensive release regarding their newest Claude model capabilities.",
+    "sentiment": "Informative/Deep Dive",
+    "topics": [
+      "Claude",
+      "Anthropic",
+      "AI Model",
+      "AI Release",
+      "Large Language Models"
+    ]
+  },
+  {
+    "video_id": "s4tptozUJ8Y",
+    "channel": "AI Explained",
+    "title": "Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?",
+    "published": "2026-03-26",
+    "thumbnail": "https://i.ytimg.com/vi/s4tptozUJ8Y/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y",
+    "speaker": "AI Explained Host",
+    "summary": "Discusses AI models prompting government regulation and the challenges these models face in the legal landscape.",
+    "sentiment": "Analytical/Concerned",
+    "topics": [
+      "AI Models",
+      "Government Regulation",
+      "Technology Challenges",
+      "AI News",
+      "AI Development"
+    ]
+  },
+  {
+    "video_id": "zizoDORjmlQ",
+    "channel": "AI Explained",
+    "title": "What the New ChatGPT 5.4 Means for the World",
+    "published": "2026-03-06",
+    "thumbnail": "https://i.ytimg.com/vi/zizoDORjmlQ/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=zizoDORjmlQ",
+    "speaker": "AI Explained Host",
+    "summary": "Detailed look at the potential societal impacts of the latest incremental update to ChatGPT.",
+    "sentiment": "Forward-looking/Analytical",
+    "topics": [
+      "ChatGPT 5.4",
+      "AI advancements",
+      "Future of AI",
+      "Large Language Models",
+      "AI impact"
+    ]
+  },
+  {
+    "video_id": "Cru804JMjPI",
+    "channel": "AI Explained",
+    "title": "Deadline Day for Autonomous AI Weapons & Mass Surveillance",
+    "published": "2026-02-27",
+    "thumbnail": "https://i.ytimg.com/vi/Cru804JMjPI/mqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=Cru804JMjPI",
+    "speaker": "AI Explained Host",
+    "summary": "Examines the ethical and legal deadlines surrounding autonomous weapons and mass surveillance systems.",
+    "sentiment": "Serious/Urgent",
+    "topics": [
+      "Autonomous AI Weapons",
+      "Mass Surveillance",
+      "AI Ethics",
+      "Technology Policy",
+      "Drones"
+    ]
+  }
+]
