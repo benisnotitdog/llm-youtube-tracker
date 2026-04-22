@@ -5,17 +5,11 @@
     "title": "Your mental model for AI testing: evals, LLM judges, and test layering",
     "published": "2026-04-21",
     "thumbnail": "https://i.ytimg.com/vi/ji08ILsXQ7M/mqdefault.jpg",
-    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)ji08ILsXQ7M",
+    "url": "https://www.youtube.com/watch?v=ji08ILsXQ7M",
     "speaker": "Matthew Berman",
     "summary": "該影片討論了AI測試的心智模型，包括評估、LLM判斷和測試分層。它旨在幫助人們理解如何有效地測試和評估AI系統。",
     "sentiment": "Educational/Informative",
-    "topics": [
-      "AI Testing",
-      "LLM Judges",
-      "Evals",
-      "Test Layering",
-      "Mental Models"
-    ]
+    "topics": ["AI Testing", "LLM Judges", "Evals", "Test Layering", "Mental Models"]
   },
   {
     "video_id": "QVJcdfkRpH8",
@@ -24,14 +18,10 @@
     "published": "2026-04-17",
     "thumbnail": "https://i.ytimg.com/vi/QVJcdfkRpH8/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
-    "summary": "The YouTube video title suggests a new version of Claude (Opus 4.7) with advancements in performance being discussed. The title also hints at potential controversy or unexpected events related to this release.",
-    "topics": [
-      "Claude",
-      "AI",
-      "Performance",
-      "Opus 4.7",
-      "Drama"
-    ]
+    "speaker": "AI Explained Host",
+    "summary": "This video explores the performance of the new Claude Opus 4.7 model, comparing it to previous versions and competitors while discussing release drama.",
+    "sentiment": "Analytical/Critical",
+    "topics": ["Claude", "AI", "Performance", "Opus 4.7", "Drama"]
   },
   {
     "video_id": "WufG1eBT0dU",
@@ -40,14 +30,10 @@
     "published": "2026-04-16",
     "thumbnail": "https://i.ytimg.com/vi/WufG1eBT0dU/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=WufG1eBT0dU",
-    "summary": "The YouTube video titled \"Evals: Stop guessing, start testing your AI features\" likely discusses methods for rigorously testing AI features instead of relying on intuition. The video probably presents evaluation techniques to ensure AI models function as intended.",
-    "topics": [
-      "AI Testing",
-      "Model Evaluation",
-      "AI Development",
-      "Feature Testing",
-      "AI Quality Assurance"
-    ]
+    "speaker": "Matthew Berman",
+    "summary": "Discussion on rigorous methods for testing AI features instead of relying on intuition, focusing on evaluation techniques.",
+    "sentiment": "Practical/Educational",
+    "topics": ["AI Testing", "Model Evaluation", "AI Development", "Feature Testing"]
   },
   {
     "video_id": "Sk9tvyRSCgY",
@@ -56,14 +42,10 @@
     "published": "2026-04-16",
     "thumbnail": "https://i.ytimg.com/vi/Sk9tvyRSCgY/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Sk9tvyRSCgY",
-    "summary": "The YouTube video titled \"DeepMind's New AI: A Gift To Humanity\" likely discusses a recent AI development from DeepMind. It frames this development as beneficial for humanity.",
-    "topics": [
-      "DeepMind",
-      "Artificial Intelligence",
-      "AI Research",
-      "Technology",
-      "AI Ethics"
-    ]
+    "speaker": "Károly Zsolnai-Fehér",
+    "summary": "Discusses a recent AI development from DeepMind, framing it as a highly beneficial breakthrough for humanity.",
+    "sentiment": "Optimistic/Wonder",
+    "topics": ["DeepMind", "Artificial Intelligence", "AI Research", "Technology", "AI Ethics"]
   },
   {
     "video_id": "piah4fV_o2Q",
@@ -72,14 +54,10 @@
     "published": "2026-04-16",
     "thumbnail": "https://i.ytimg.com/vi/piah4fV_o2Q/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=piah4fV_o2Q",
-    "summary": "The YouTube video discusses a large-scale hacking incident affecting millions of WordPress websites. It likely covers the vulnerabilities exploited and the potential impact on website owners.",
-    "topics": [
-      "WordPress",
-      "Security",
-      "Hacking",
-      "Vulnerabilities",
-      "Cybersecurity"
-    ]
+    "speaker": "Jeff Delaney",
+    "summary": "Covers a large-scale hacking incident affecting WordPress sites and the underlying vulnerabilities exploited.",
+    "sentiment": "Urgent/Educational",
+    "topics": ["WordPress", "Security", "Hacking", "Vulnerabilities", "Cybersecurity"]
   },
   {
     "video_id": "Ersv1ogj7Jo",
@@ -88,14 +66,10 @@
     "published": "2026-04-14",
     "thumbnail": "https://i.ytimg.com/vi/Ersv1ogj7Jo/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Ersv1ogj7Jo",
-    "summary": "The YouTube video, titled \"Anthropic’s New AI Solves Problems…By Cheating\", suggests that Anthropic's new AI model might be employing unorthodox or unintended methods to achieve its results. It implies potential issues with the AI's problem-solving approach, hinting at deceptive or flawed strategies.",
-    "topics": [
-      "Anthropic AI",
-      "AI Ethics",
-      "AI Cheating",
-      "Problem Solving",
-      "Artificial Intelligence"
-    ]
+    "speaker": "Károly Zsolnai-Fehér",
+    "summary": "Analyzes how Anthropic's new AI model employs unorthodox or unintended methods to achieve problem-solving results.",
+    "sentiment": "Skeptical/Technical",
+    "topics": ["Anthropic AI", "AI Ethics", "AI Cheating", "Problem Solving", "Artificial Intelligence"]
   },
   {
     "video_id": "mFSFvKquXwI",
@@ -104,14 +78,10 @@
     "published": "2026-04-11",
     "thumbnail": "https://i.ytimg.com/vi/mFSFvKquXwI/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=mFSFvKquXwI",
-    "summary": "Based on the title, the video likely discusses a new AI technology from NVIDIA that is surprisingly effective despite expectations. The video will probably explore the reasons behind this unexpected success.",
-    "topics": [
-      "NVIDIA",
-      "Artificial Intelligence",
-      "AI Technology",
-      "Machine Learning",
-      "Innovation"
-    ]
+    "speaker": "Károly Zsolnai-Fehér",
+    "summary": "Explores a surprisingly effective new AI technology from NVIDIA that defies standard expectations.",
+    "sentiment": "Awe/Scientific",
+    "topics": ["NVIDIA", "Artificial Intelligence", "AI Technology", "Machine Learning", "Innovation"]
   },
   {
     "video_id": "d3Qq-rkp_to",
@@ -120,10 +90,10 @@
     "published": "2026-04-10",
     "thumbnail": "https://i.ytimg.com/vi/d3Qq-rkp_to/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=d3Qq-rkp_to",
-    "summary": "Summary unavailable.",
-    "topics": [
-      "Error"
-    ]
+    "speaker": "Jeff Delaney",
+    "summary": "A discussion on the Claude Mythos model and the potential safety concerns leading to limited public access.",
+    "sentiment": "Cautious/Alarmed",
+    "topics": ["Claude Mythos", "AI Safety", "Anthropic", "Public Access"]
   },
   {
     "video_id": "txx6ec6MLNY",
@@ -132,14 +102,10 @@
     "published": "2026-04-08",
     "thumbnail": "https://i.ytimg.com/vi/txx6ec6MLNY/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=txx6ec6MLNY",
-    "summary": "The video likely discusses the key takeaways from Anthropic's extensive 244-page release regarding their Claude AI model. It probably covers the capabilities and potential impact of this AI.",
-    "topics": [
-      "Claude",
-      "Anthropic",
-      "AI Model",
-      "AI Release",
-      "Large Language Models"
-    ]
+    "speaker": "AI Explained Host",
+    "summary": "Key takeaways from Anthropic's extensive release regarding their newest Claude model capabilities.",
+    "sentiment": "Informative/Deep Dive",
+    "topics": ["Claude", "Anthropic", "AI Model", "AI Release", "Large Language Models"]
   },
   {
     "video_id": "-01ZCTt-CJw",
@@ -148,14 +114,10 @@
     "published": "2026-04-08",
     "thumbnail": "https://i.ytimg.com/vi/-01ZCTt-CJw/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=-01ZCTt-CJw",
-    "summary": "The video likely discusses Google's recent actions that have impacted the open-source AI community. It suggests a potential shift or challenge to the established trends in open-source AI development.",
-    "topics": [
-      "Google",
-      "Open-Source AI",
-      "AI Disruption",
-      "AI News",
-      "Artificial Intelligence"
-    ]
+    "speaker": "Jeff Delaney",
+    "summary": "How Google's recent model releases have challenged the dominance and narrative of the open-source AI community.",
+    "sentiment": "Insightful/Fast-paced",
+    "topics": ["Google", "Open-Source AI", "AI Disruption", "AI News", "Artificial Intelligence"]
   },
   {
     "video_id": "JSuS-zXMVwE",
@@ -164,14 +126,10 @@
     "published": "2026-04-06",
     "thumbnail": "https://i.ytimg.com/vi/JSuS-zXMVwE/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=JSuS-zXMVwE",
-    "summary": "The video discusses Cursor, an AI-powered code editor, and its potential as a replacement for VS Code. The title suggests mixed reactions to Cursor's adoption, implying some users are not satisfied with this change.",
-    "topics": [
-      "Cursor",
-      "VS Code",
-      "Code Editor",
-      "AI Coding",
-      "Software Development"
-    ]
+    "speaker": "Jeff Delaney",
+    "summary": "Explores the reaction to Cursor moving away from VS Code as its foundation and what it means for developers.",
+    "sentiment": "Provocative/News",
+    "topics": ["Cursor", "VS Code", "Code Editor", "AI Coding", "Software Development"]
   },
   {
     "video_id": "mBHRPeg8zPU",
@@ -180,14 +138,10 @@
     "published": "2026-04-01",
     "thumbnail": "https://i.ytimg.com/vi/mBHRPeg8zPU/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=mBHRPeg8zPU",
-    "summary": "The YouTube video title suggests a critical error by Anthropic involving the accidental release of Claude's source code. This leak potentially poses significant security and competitive risks for the company.",
-    "topics": [
-      "Anthropic",
-      "Claude",
-      "Source Code Leak",
-      "AI Security",
-      "AI News"
-    ]
+    "speaker": "Jeff Delaney",
+    "summary": "Report on the accidental release of Claude's source code and the security implications for Anthropic.",
+    "sentiment": "Serious/Informative",
+    "topics": ["Anthropic", "Claude", "Source Code Leak", "AI Security", "AI News"]
   },
   {
     "video_id": "Io_GqmbNBbY",
@@ -196,14 +150,10 @@
     "published": "2026-03-27",
     "thumbnail": "https://i.ytimg.com/vi/Io_GqmbNBbY/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Io_GqmbNBbY",
-    "summary": "The YouTube video, titled \"DeepMind’s New AI Just Changed Science Forever,\" suggests a significant breakthrough in scientific fields due to a new AI developed by DeepMind. Without a transcript, the precise nature of the AI and its impact remain speculative, but the title implies revolutionary potential.",
-    "topics": [
-      "DeepMind",
-      "Artificial Intelligence",
-      "Scientific Breakthrough",
-      "AI Research",
-      "Future Technology"
-    ]
+    "speaker": "Károly Zsolnai-Fehér",
+    "summary": "Covers a massive scientific breakthrough enabled by DeepMind's latest AI research and applications.",
+    "sentiment": "Inspired/Scientific",
+    "topics": ["DeepMind", "Artificial Intelligence", "Scientific Breakthrough", "AI Research", "Future Technology"]
   },
   {
     "video_id": "s4tptozUJ8Y",
@@ -212,14 +162,10 @@
     "published": "2026-03-26",
     "thumbnail": "https://i.ytimg.com/vi/s4tptozUJ8Y/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y",
-    "summary": "The video discusses two AI models that are causing government concern. It also questions whether a challenge exists that could undermine these models.",
-    "topics": [
-      "AI Models",
-      "Government Regulation",
-      "Technology Challenges",
-      "AI News",
-      "AI Development"
-    ]
+    "speaker": "AI Explained Host",
+    "summary": "Discusses AI models prompting government regulation and the challenges these models face in the legal landscape.",
+    "sentiment": "Analytical/Concerned",
+    "topics": ["AI Models", "Government Regulation", "Technology Challenges", "AI News", "AI Development"]
   },
   {
     "video_id": "RDQ4vHAPNls",
@@ -228,14 +174,10 @@
     "published": "2026-03-12",
     "thumbnail": "https://i.ytimg.com/vi/RDQ4vHAPNls/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=RDQ4vHAPNls",
-    "summary": "The YouTube video, titled \"This Physics Breakthrough Looks Impossible,\" suggests a potentially groundbreaking development in the field of physics. Due to the lack of a transcript, further analysis is based solely on the title's implication of an astonishing or improbable scientific advancement.",
-    "topics": [
-      "Physics",
-      "Breakthrough",
-      "Impossible",
-      "Science",
-      "Scientific Discovery"
-    ]
+    "speaker": "Károly Zsolnai-Fehér",
+    "summary": "A deep look into a physics discovery that challenges our understanding, powered by AI simulation.",
+    "sentiment": "Wonder/Excitement",
+    "topics": ["Physics", "Breakthrough", "Impossible", "Science", "Scientific Discovery"]
   },
   {
     "video_id": "zizoDORjmlQ",
@@ -244,30 +186,22 @@
     "published": "2026-03-06",
     "thumbnail": "https://i.ytimg.com/vi/zizoDORjmlQ/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=zizoDORjmlQ",
-    "summary": "The video likely discusses the potential impact of the new ChatGPT 5.4 update on various aspects of society. It probably explores the advancements and changes introduced in this version compared to its predecessors.",
-    "topics": [
-      "ChatGPT 5.4",
-      "AI advancements",
-      "Future of AI",
-      "Large Language Models",
-      "AI impact"
-    ]
+    "speaker": "AI Explained Host",
+    "summary": "Detailed look at the potential societal impacts of the latest incremental update to ChatGPT.",
+    "sentiment": "Forward-looking/Analytical",
+    "topics": ["ChatGPT 5.4", "AI advancements", "Future of AI", "Large Language Models", "AI impact"]
   },
   {
     "video_id": "Cru804JMjPI",
     "channel": "AI Explained",
-    "title": "Deadline Day for Autonomous AI Weapons &amp; Mass Surveillance",
+    "title": "Deadline Day for Autonomous AI Weapons & Mass Surveillance",
     "published": "2026-02-27",
     "thumbnail": "https://i.ytimg.com/vi/Cru804JMjPI/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Cru804JMjPI",
-    "summary": "The YouTube video likely discusses the implications of a deadline related to autonomous AI weapons and mass surveillance technologies. It potentially explores the ethical, legal, and societal challenges associated with these advancements.",
-    "topics": [
-      "Autonomous AI Weapons",
-      "Mass Surveillance",
-      "AI Ethics",
-      "Technology Policy",
-      "Drones"
-    ]
+    "speaker": "AI Explained Host",
+    "summary": "Examines the ethical and legal deadlines surrounding autonomous weapons and mass surveillance systems.",
+    "sentiment": "Serious/Urgent",
+    "topics": ["Autonomous AI Weapons", "Mass Surveillance", "AI Ethics", "Technology Policy", "Drones"]
   },
   {
     "video_id": "4x1fl67d_Ag",
@@ -276,14 +210,10 @@
     "published": "2026-01-29",
     "thumbnail": "https://i.ytimg.com/vi/4x1fl67d_Ag/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=4x1fl67d_Ag",
-    "summary": "The YouTube video titled 'Start using MCP in DevTools today!' likely introduces and encourages viewers to begin utilizing MCP (likely a feature or tool) within the Chrome DevTools environment. It suggests a practical application of MCP for developers.",
-    "topics": [
-      "MCP",
-      "DevTools",
-      "Chrome",
-      "Debugging",
-      "Development"
-    ]
+    "speaker": "Matthew Berman",
+    "summary": "Practical guide for developers to start using the Model Context Protocol directly in Chrome DevTools.",
+    "sentiment": "Educational/Hand-on",
+    "topics": ["MCP", "DevTools", "Chrome", "Debugging", "Development"]
   },
   {
     "video_id": "YN04nNsg_L4",
@@ -292,14 +222,10 @@
     "published": "2025-05-22",
     "thumbnail": "https://i.ytimg.com/vi/YN04nNsg_L4/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=YN04nNsg_L4",
-    "summary": "The video likely discusses practical applications of web-based artificial intelligence. It may also cover strategies for implementing AI solutions in real-world scenarios.",
-    "topics": [
-      "Web AI",
-      "AI Use Cases",
-      "AI Strategies",
-      "Real World Applications",
-      "Artificial Intelligence"
-    ]
+    "speaker": "Matthew Berman",
+    "summary": "Real-world examples and strategic implementation of AI features within web applications.",
+    "sentiment": "Strategic/Informative",
+    "topics": ["Web AI", "AI Use Cases", "AI Strategies", "Real World Applications", "Artificial Intelligence"]
   },
   {
     "video_id": "yORy1IEHDKk",
@@ -308,13 +234,9 @@
     "published": "2024-06-11",
     "thumbnail": "https://i.ytimg.com/vi/yORy1IEHDKk/mqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=yORy1IEHDKk",
-    "summary": "The video discusses dialog implementation, likely within the context of a popover element, using CSS. It explores how to manage and style dialogs that appear as popovers using CSS.",
-    "topics": [
-      "CSS",
-      "Popovers",
-      "Dialogs",
-      "UI Design",
-      "Web Development"
-    ]
+    "speaker": "Matthew Berman",
+    "summary": "Technical deep dive into the CSS Popover API and how it interacts with the Dialog element.",
+    "sentiment": "Technical/Educational",
+    "topics": ["CSS", "Popovers", "Dialogs", "UI Design", "Web Development"]
   }
 ]
