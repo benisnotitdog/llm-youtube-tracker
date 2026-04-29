@@ -1,5 +1,20 @@
 [
   {
+    "video_id": "yzajLZXh9JU",
+    "channel": "Two Minute Papers",
+    "title": "Solved: The Bug That Haunted AI Video For Years",
+    "published": "2026-04-28",
+    "thumbnail": "https://i.ytimg.com/vi/yzajLZXh9JU/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)yzajLZXh9JU",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "cdOJDYXPXQI",
     "channel": "Matthew Berman",
     "title": "How Chrome deprecates and removes features",
