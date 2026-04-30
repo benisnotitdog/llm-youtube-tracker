@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "LfLqurgEWh0",
+    "channel": "Matthew Berman",
+    "title": "The annual session prep for Google I/O",
+    "published": "2026-04-29",
+    "thumbnail": "https://i.ytimg.com/vi/LfLqurgEWh0/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)LfLqurgEWh0",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "hKmdToAMQcY",
+    "channel": "Matthew Berman",
+    "title": "Build a Basic LLM Judge",
+    "published": "2026-04-29",
+    "thumbnail": "https://i.ytimg.com/vi/hKmdToAMQcY/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)hKmdToAMQcY",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "yzajLZXh9JU",
     "channel": "Two Minute Papers",
     "title": "Solved: The Bug That Haunted AI Video For Years",
