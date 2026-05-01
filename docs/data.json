@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "i1OCGChwO_I",
+    "channel": "Matthew Berman",
+    "title": "Building an extension in Antigravity in 6 minutes",
+    "published": "2026-04-30",
+    "thumbnail": "https://i.ytimg.com/vi/i1OCGChwO_I/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)i1OCGChwO_I",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "d53Zk28esmU",
+    "channel": "Fireship",
+    "title": "GitHub is having some major issues right now…",
+    "published": "2026-04-30",
+    "thumbnail": "https://i.ytimg.com/vi/d53Zk28esmU/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)d53Zk28esmU",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "LfLqurgEWh0",
     "channel": "Matthew Berman",
     "title": "The annual session prep for Google I/O",
