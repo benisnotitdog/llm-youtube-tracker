@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "IBh3Wz5YIR8",
+    "channel": "Matthew Berman",
+    "title": "What is the Chrome DevTools MCP server",
+    "published": "2026-05-01",
+    "thumbnail": "https://i.ytimg.com/vi/IBh3Wz5YIR8/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)IBh3Wz5YIR8",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "QzZ4VwDHAT4",
+    "channel": "Two Minute Papers",
+    "title": "Sakana AI’s Survival Simulator Is Brilliant",
+    "published": "2026-05-01",
+    "thumbnail": "https://i.ytimg.com/vi/QzZ4VwDHAT4/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)QzZ4VwDHAT4",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "i1OCGChwO_I",
     "channel": "Matthew Berman",
     "title": "Building an extension in Antigravity in 6 minutes",
