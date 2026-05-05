@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "bpP2Qo0_-qU",
+    "channel": "Matthew Berman",
+    "title": "WebMCP: teach Agents to browse your site",
+    "published": "2026-05-04",
+    "thumbnail": "https://i.ytimg.com/vi/bpP2Qo0_-qU/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)bpP2Qo0_-qU",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "lkifbWtxxlk",
+    "channel": "Fireship",
+    "title": "732 bytes of Python just borked every Linux machine on earth…",
+    "published": "2026-05-04",
+    "thumbnail": "https://i.ytimg.com/vi/lkifbWtxxlk/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)lkifbWtxxlk",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "eCw33snvoNI",
     "channel": "Two Minute Papers",
     "title": "NVIDIA's New AI Turns One Photo Into A World That Never Breaks",
