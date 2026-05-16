@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "Meb87FCisHo",
+    "channel": "Matthew Berman",
+    "title": "How to test web platforms with Chrome Dev",
+    "published": "2026-05-15",
+    "thumbnail": "https://i.ytimg.com/vi/Meb87FCisHo/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)Meb87FCisHo",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "3tbB2dffx0s",
+    "channel": "Fireship",
+    "title": "I can’t believe this trial is real...",
+    "published": "2026-05-15",
+    "thumbnail": "https://i.ytimg.com/vi/3tbB2dffx0s/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)3tbB2dffx0s",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "B6f5ikY4Psg",
     "channel": "Matthew Berman",
     "title": "Build an expert LLM judge",
