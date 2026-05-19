@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "h-rb6faAd1A",
+    "channel": "Matthew Berman",
+    "title": "#GoogleIO officially kicks off tomorrow!",
+    "published": "2026-05-19",
+    "thumbnail": "https://i.ytimg.com/vi/h-rb6faAd1A/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)h-rb6faAd1A",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "smEEMlgyz2s",
+    "channel": "Matthew Berman",
+    "title": "Register for #GoogleIO today and unpack all the news our team is bringing to build a better web",
+    "published": "2026-05-18",
+    "thumbnail": "https://i.ytimg.com/vi/smEEMlgyz2s/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)smEEMlgyz2s",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "Meb87FCisHo",
     "channel": "Matthew Berman",
     "title": "How to test web platforms with Chrome Dev",
