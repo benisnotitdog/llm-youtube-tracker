@@ -1,5 +1,50 @@
 [
   {
+    "video_id": "aJvP3nXWkwM",
+    "channel": "AI Explained",
+    "title": "New Claude Opus 4.8: 15 Things You May’ve Missed",
+    "published": "2026-05-29",
+    "thumbnail": "https://i.ytimg.com/vi/aJvP3nXWkwM/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)aJvP3nXWkwM",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "AI Explained",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "H8jIVQdYymA",
+    "channel": "Matthew Berman",
+    "title": "Scale your web expertise with Chrome DevTools for agents #GoogleIO",
+    "published": "2026-05-29",
+    "thumbnail": "https://i.ytimg.com/vi/H8jIVQdYymA/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)H8jIVQdYymA",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "JfPWbttemYE",
+    "channel": "Fireship",
+    "title": "The forgotten developer who saved JavaScript...",
+    "published": "2026-05-29",
+    "thumbnail": "https://i.ytimg.com/vi/JfPWbttemYE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)JfPWbttemYE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "mc9Rgg1097s",
     "channel": "Matthew Berman",
     "title": "What it actually takes to prep for a #GoogleIO session!",
