@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "je6m7tIiVPw",
+    "channel": "Matthew Berman",
+    "title": "Fix markdown image syntax with AI and JSON schemas #GoogleIO",
+    "published": "2026-06-05",
+    "thumbnail": "https://i.ytimg.com/vi/je6m7tIiVPw/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)je6m7tIiVPw",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "Dkqzqw8rxXI",
+    "channel": "Two Minute Papers",
+    "title": "DeepMind’s New AI Found A Strange New Way To Think",
+    "published": "2026-06-05",
+    "thumbnail": "https://i.ytimg.com/vi/Dkqzqw8rxXI/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)Dkqzqw8rxXI",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "kFi1yuGlCcA",
     "channel": "Matthew Berman",
     "title": "Emulate device capabilities with Chrome DevTools for agents",
