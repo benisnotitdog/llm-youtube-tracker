@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "0cxQlEhEkSY",
+    "channel": "Matthew Berman",
+    "title": "Stop prompt injection with WebMCP for a safer web.",
+    "published": "2026-06-16",
+    "thumbnail": "https://i.ytimg.com/vi/0cxQlEhEkSY/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)0cxQlEhEkSY",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "l72ufA-4SzE",
+    "channel": "Two Minute Papers",
+    "title": "They Looked Inside Claude’s AI's Mind. It Got Weird",
+    "published": "2026-06-16",
+    "thumbnail": "https://i.ytimg.com/vi/l72ufA-4SzE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)l72ufA-4SzE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "4AAiTP1B8wA",
     "channel": "Matthew Berman",
     "title": "What is the Federated Credential Management API (FedCM)?",
