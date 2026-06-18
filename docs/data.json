@@ -1,5 +1,50 @@
 [
   {
+    "video_id": "sWGDKsBss8E",
+    "channel": "Matthew Berman",
+    "title": "A global team bringing you the future of the web",
+    "published": "2026-06-17",
+    "thumbnail": "https://i.ytimg.com/vi/sWGDKsBss8E/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)sWGDKsBss8E",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "jicENhajkOg",
+    "channel": "Matthew Berman",
+    "title": "What is FedCM and how does it improve online privacy?",
+    "published": "2026-06-17",
+    "thumbnail": "https://i.ytimg.com/vi/jicENhajkOg/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)jicENhajkOg",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "ML3q7Ok4hJg",
+    "channel": "Fireship",
+    "title": "I read every major CS paper of the last 100 years...",
+    "published": "2026-06-17",
+    "thumbnail": "https://i.ytimg.com/vi/ML3q7Ok4hJg/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)ML3q7Ok4hJg",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "0cxQlEhEkSY",
     "channel": "Matthew Berman",
     "title": "Stop prompt injection with WebMCP for a safer web.",
