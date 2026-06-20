@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "dUmT0OIGoqE",
+    "channel": "Two Minute Papers",
+    "title": "Scientists Found A Better Language For AI Agents",
+    "published": "2026-06-19",
+    "thumbnail": "https://i.ytimg.com/vi/dUmT0OIGoqE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)dUmT0OIGoqE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "Sntj4HmuykI",
+    "channel": "Fireship",
+    "title": "The most trusted code on Earth is being rewritten in Rust",
+    "published": "2026-06-19",
+    "thumbnail": "https://i.ytimg.com/vi/Sntj4HmuykI/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)Sntj4HmuykI",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "EJfVtcBxKoo",
     "channel": "Matthew Berman",
     "title": "How to emulate device capabilities with Chrome DevTools for agents",
