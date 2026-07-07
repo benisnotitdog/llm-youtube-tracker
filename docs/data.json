@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "_KBZ241HS9c",
+    "channel": "Matthew Berman",
+    "title": "Google I/O Connect Berlin with Chrome for Developers",
+    "published": "2026-07-06",
+    "thumbnail": "https://i.ytimg.com/vi/_KBZ241HS9c/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)_KBZ241HS9c",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "66josBG04qA",
+    "channel": "Matthew Berman",
+    "title": "New quest: Discover DevTools for agents",
+    "published": "2026-07-06",
+    "thumbnail": "https://i.ytimg.com/vi/66josBG04qA/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)66josBG04qA",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "uO5cvkzh3P0",
     "channel": "Two Minute Papers",
     "title": "They Said This Will Never Run In Real Time",
