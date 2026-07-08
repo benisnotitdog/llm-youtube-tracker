@@ -1,5 +1,50 @@
 [
   {
+    "video_id": "YImum6f4Z2w",
+    "channel": "Matthew Berman",
+    "title": "Create a closed feedback loop: Chrome Devtools for agents (I/O Connect ‘26)",
+    "published": "2026-07-07",
+    "thumbnail": "https://i.ytimg.com/vi/YImum6f4Z2w/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)YImum6f4Z2w",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "SAYyWDKdCJA",
+    "channel": "Matthew Berman",
+    "title": "Life After I/O: Where is the Chrome DevRel team now?",
+    "published": "2026-07-07",
+    "thumbnail": "https://i.ytimg.com/vi/SAYyWDKdCJA/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)SAYyWDKdCJA",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "1yBU41auQhw",
+    "channel": "Two Minute Papers",
+    "title": "DeepSeek's New AI Speed Hack Is Amazing",
+    "published": "2026-07-07",
+    "thumbnail": "https://i.ytimg.com/vi/1yBU41auQhw/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)1yBU41auQhw",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "_KBZ241HS9c",
     "channel": "Matthew Berman",
     "title": "Google I/O Connect Berlin with Chrome for Developers",
