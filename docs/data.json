@@ -1,5 +1,50 @@
 [
   {
+    "video_id": "rXT0bscwllk",
+    "channel": "Matthew Berman",
+    "title": "New workflows for improved web app quality: Modern Web Guidance and DevTools (I/O Connect '26)",
+    "published": "2026-07-09",
+    "thumbnail": "https://i.ytimg.com/vi/rXT0bscwllk/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)rXT0bscwllk",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "OPHGK5tn1Y0",
+    "channel": "Matthew Berman",
+    "title": "Authentication in 2026: A guide to passkeys, digital credentials and more (I/O Connect ‘26)",
+    "published": "2026-07-08",
+    "thumbnail": "https://i.ytimg.com/vi/OPHGK5tn1Y0/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)OPHGK5tn1Y0",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "KGtko3y2RXQ",
+    "channel": "Fireship",
+    "title": "Claude is definitely not conscious…",
+    "published": "2026-07-08",
+    "thumbnail": "https://i.ytimg.com/vi/KGtko3y2RXQ/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)KGtko3y2RXQ",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "YImum6f4Z2w",
     "channel": "Matthew Berman",
     "title": "Create a closed feedback loop: Chrome Devtools for agents (I/O Connect ‘26)",
