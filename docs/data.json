@@ -15,6 +15,36 @@
     ]
   },
   {
+    "video_id": "mRsbIHuSMhg",
+    "channel": "Matthew Berman",
+    "title": "Explain like I’m 5: WebMCP edition",
+    "published": "2026-07-09",
+    "thumbnail": "https://i.ytimg.com/vi/mRsbIHuSMhg/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)mRsbIHuSMhg",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "RmA5BIzxLYs",
+    "channel": "Matthew Berman",
+    "title": "What is Modern Web Guidance?",
+    "published": "2026-07-09",
+    "thumbnail": "https://i.ytimg.com/vi/RmA5BIzxLYs/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)RmA5BIzxLYs",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "OPHGK5tn1Y0",
     "channel": "Matthew Berman",
     "title": "Authentication in 2026: A guide to passkeys, digital credentials and more (I/O Connect ‘26)",
