@@ -1,5 +1,50 @@
 [
   {
+    "video_id": "wzY2fV4Mp3U",
+    "channel": "AI Explained",
+    "title": "GPT-6 Goes Rogue? The HuggingFace Incident, Sans Hype",
+    "published": "2026-07-22",
+    "thumbnail": "https://i.ytimg.com/vi/wzY2fV4Mp3U/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)wzY2fV4Mp3U",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "AI Explained",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "4FvIlVWWCnE",
+    "channel": "Matthew Berman",
+    "title": "How to get Chrome Web Store approval",
+    "published": "2026-07-22",
+    "thumbnail": "https://i.ytimg.com/vi/4FvIlVWWCnE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)4FvIlVWWCnE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "YP73B9D20V4",
+    "channel": "Fireship",
+    "title": "Open-weight AI just hit 2.8 trillion parameters…",
+    "published": "2026-07-22",
+    "thumbnail": "https://i.ytimg.com/vi/YP73B9D20V4/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)YP73B9D20V4",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "5lJ0a6tdj-4",
     "channel": "Matthew Berman",
     "title": "How to build and debug WebMCP tools for browser agents",
