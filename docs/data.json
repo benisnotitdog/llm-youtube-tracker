@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "2U3kFesNNcI",
+    "channel": "Matthew Berman",
+    "title": "What actually happens when you click a link?",
+    "published": "2026-07-23",
+    "thumbnail": "https://i.ytimg.com/vi/2U3kFesNNcI/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)2U3kFesNNcI",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "KOpTWx1Eou4",
+    "channel": "Fireship",
+    "title": "The most interesting \"hack\" in history...",
+    "published": "2026-07-23",
+    "thumbnail": "https://i.ytimg.com/vi/KOpTWx1Eou4/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)KOpTWx1Eou4",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "wzY2fV4Mp3U",
     "channel": "AI Explained",
     "title": "GPT-6 Goes Rogue? The HuggingFace Incident, Sans Hype",
