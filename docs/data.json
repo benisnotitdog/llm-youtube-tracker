@@ -1,5 +1,20 @@
 [
   {
+    "video_id": "8B05cy3UuSE",
+    "channel": "Two Minute Papers",
+    "title": "NVIDIA's AI Learns Why Copying Humans Isn't Enough",
+    "published": "2026-08-02",
+    "thumbnail": "https://i.ytimg.com/vi/8B05cy3UuSE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)8B05cy3UuSE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "hcNflnDq8Ms",
     "channel": "Matthew Berman",
     "title": "Inspect and test WebMCP tools using Chrome DevTools",
