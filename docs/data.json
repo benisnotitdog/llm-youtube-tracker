@@ -1,5 +1,50 @@
 [
   {
+    "video_id": "Spuza-KwTJ4",
+    "channel": "AI Explained",
+    "title": "GPT 6 Astra, so good even OpenAI are worried",
+    "published": "2026-09-04",
+    "thumbnail": "https://i.ytimg.com/vi/Spuza-KwTJ4/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)Spuza-KwTJ4",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "AI Explained",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "GAyfTSsOXMI",
+    "channel": "Matthew Berman",
+    "title": "How to use Chrome DevTools for agents with Chrome extensions",
+    "published": "2026-09-04",
+    "thumbnail": "https://i.ytimg.com/vi/GAyfTSsOXMI/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)GAyfTSsOXMI",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "FluKUJyeYD8",
+    "channel": "Fireship",
+    "title": "Did OpenAI actually build AGI? GPT-6 Astra first look",
+    "published": "2026-09-04",
+    "thumbnail": "https://i.ytimg.com/vi/FluKUJyeYD8/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)FluKUJyeYD8",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "1ZGlnGUp0XA",
     "channel": "Matthew Berman",
     "title": "Third-party tools for Chrome DevTools for Agents",
