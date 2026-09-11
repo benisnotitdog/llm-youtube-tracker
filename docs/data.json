@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "OML41EaXFBs",
+    "channel": "Matthew Berman",
+    "title": "Build custom third-party tools in Chrome DevTools",
+    "published": "2026-09-10",
+    "thumbnail": "https://i.ytimg.com/vi/OML41EaXFBs/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)OML41EaXFBs",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "mOvtumfyjCs",
+    "channel": "Two Minute Papers",
+    "title": "I Never Thought I’d See This Happen",
+    "published": "2026-09-10",
+    "thumbnail": "https://i.ytimg.com/vi/mOvtumfyjCs/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)mOvtumfyjCs",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "2Xiljy4xzbc",
     "channel": "Fireship",
     "title": "I built the same game with Astra and Fable 5.1... only one was fun",
