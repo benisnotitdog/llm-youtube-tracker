@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "9U4D5m24mhc",
+    "channel": "Matthew Berman",
+    "title": "Modern Web Guidance: Swipe to remove",
+    "published": "2026-09-22",
+    "thumbnail": "https://i.ytimg.com/vi/9U4D5m24mhc/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)9U4D5m24mhc",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "qBBRRsH0rQc",
+    "channel": "Two Minute Papers",
+    "title": "Yes, Jev Is Insane, But There's A Catch",
+    "published": "2026-09-22",
+    "thumbnail": "https://i.ytimg.com/vi/qBBRRsH0rQc/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)qBBRRsH0rQc",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "TbkUKCm3CHQ",
     "channel": "Fireship",
     "title": "An ex-OpenAI researcher just deleted language from the LLM...",
