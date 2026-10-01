@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "vukchAoaTdE",
+    "channel": "Matthew Berman",
+    "title": "What's New: Chrome DevTools 151-153",
+    "published": "2026-09-30",
+    "thumbnail": "https://i.ytimg.com/vi/vukchAoaTdE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)vukchAoaTdE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "I_KVMFrUtPk",
+    "channel": "Fireship",
+    "title": "Did a 50 year old military secret just solve agent prompt injection?",
+    "published": "2026-09-30",
+    "thumbnail": "https://i.ytimg.com/vi/I_KVMFrUtPk/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)I_KVMFrUtPk",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "kbjHnZOQgkQ",
     "channel": "Matthew Berman",
     "title": "Modern Web Guidance: Scroll-driven entry and exit effects",
