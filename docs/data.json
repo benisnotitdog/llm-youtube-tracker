@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "ZHVNTTKu9fU",
+    "channel": "Two Minute Papers",
+    "title": "The Billion Dollar AI Advantage Is Disappearing",
+    "published": "2026-10-05",
+    "thumbnail": "https://i.ytimg.com/vi/ZHVNTTKu9fU/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)ZHVNTTKu9fU",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "_5p1_TNSWqQ",
+    "channel": "Fireship",
+    "title": "PewDiePie is setting AI free... and OpenAI is furious",
+    "published": "2026-10-05",
+    "thumbnail": "https://i.ytimg.com/vi/_5p1_TNSWqQ/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)_5p1_TNSWqQ",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "_rtp1XzaP6Q",
     "channel": "AI Explained",
     "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
