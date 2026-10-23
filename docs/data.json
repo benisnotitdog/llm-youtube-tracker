@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "mB0eWkWubuk",
+    "channel": "Matthew Berman",
+    "title": "HTML-in-canvas: Where interactive content and high performance graphics meet",
+    "published": "2026-10-22",
+    "thumbnail": "https://i.ytimg.com/vi/mB0eWkWubuk/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)mB0eWkWubuk",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "zv6B6PQOuHE",
+    "channel": "Fireship",
+    "title": "The last real programmers are dying out...",
+    "published": "2026-10-22",
+    "thumbnail": "https://i.ytimg.com/vi/zv6B6PQOuHE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)zv6B6PQOuHE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "WccuSkL7KOQ",
     "channel": "Matthew Berman",
     "title": "Modern Web Guidance in your AI workflow:Modal dialog transitions",
