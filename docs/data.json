@@ -1,5 +1,50 @@
 [
   {
+    "video_id": "eAcWG_O3DJs",
+    "channel": "Matthew Berman",
+    "title": "Support for WebMCP in Chrome DevTools",
+    "published": "2026-10-28",
+    "thumbnail": "https://i.ytimg.com/vi/eAcWG_O3DJs/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)eAcWG_O3DJs",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "pryCaGv8wuo",
+    "channel": "Two Minute Papers",
+    "title": "Deepseek's New AI Has A Secret",
+    "published": "2026-10-28",
+    "thumbnail": "https://i.ytimg.com/vi/pryCaGv8wuo/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)pryCaGv8wuo",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "nEaJMdM1djM",
+    "channel": "Fireship",
+    "title": "Did the AI bubble just pop?",
+    "published": "2026-10-28",
+    "thumbnail": "https://i.ytimg.com/vi/nEaJMdM1djM/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)nEaJMdM1djM",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "2jb6D2yhdis",
     "channel": "Matthew Berman",
     "title": "How to evaluate your WebMCP tools",
