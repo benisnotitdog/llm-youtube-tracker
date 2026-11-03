@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "0Kw6_DTZPrY",
+    "channel": "AI Explained",
+    "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
+    "published": "2026-11-02",
+    "thumbnail": "https://i.ytimg.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)0Kw6_DTZPrY",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "AI Explained",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "SxHnHFwjpI0",
+    "channel": "Matthew Berman",
+    "title": "Debug WebMCP with Chrome DevTools",
+    "published": "2026-11-02",
+    "thumbnail": "https://i.ytimg.com/vi/SxHnHFwjpI0/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)SxHnHFwjpI0",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "YCOy5uGJnQA",
     "channel": "Matthew Berman",
     "title": "How to build safer WebMCP tools for AI agents",
