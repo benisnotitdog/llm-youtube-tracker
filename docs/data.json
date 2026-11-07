@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "XgC1QTs6A2U",
+    "channel": "Two Minute Papers",
+    "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
+    "published": "2026-11-06",
+    "thumbnail": "https://i.ytimg.com/vi/XgC1QTs6A2U/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)XgC1QTs6A2U",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "iw9SZgyahqg",
+    "channel": "Fireship",
+    "title": "The one thing holding theoretical CS together just broke... kinda",
+    "published": "2026-11-06",
+    "thumbnail": "https://i.ytimg.com/vi/iw9SZgyahqg/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)iw9SZgyahqg",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "StAhZk_YVkE",
     "channel": "Matthew Berman",
     "title": "Memory debugging with agents",
