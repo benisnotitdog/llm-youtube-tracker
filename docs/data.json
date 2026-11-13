@@ -1,5 +1,65 @@
 [
   {
+    "video_id": "ay9AKuCEqvw",
+    "channel": "Matthew Berman",
+    "title": "How to find memory leaks with Chrome DevTools for agents",
+    "published": "2026-11-12",
+    "thumbnail": "https://i.ytimg.com/vi/ay9AKuCEqvw/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)ay9AKuCEqvw",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "mogYbZ4CFB8",
+    "channel": "Matthew Berman",
+    "title": "Agentic web development with Modern Web Guidance and Chrome DevTools for agents",
+    "published": "2026-11-12",
+    "thumbnail": "https://i.ytimg.com/vi/mogYbZ4CFB8/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)mogYbZ4CFB8",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "gPNiuyYirfw",
+    "channel": "Two Minute Papers",
+    "title": "DeepMind’s AI Just Did The Impossible",
+    "published": "2026-11-12",
+    "thumbnail": "https://i.ytimg.com/vi/gPNiuyYirfw/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)gPNiuyYirfw",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "SOwUWPtXQ9I",
+    "channel": "Fireship",
+    "title": "Jensen Huang just pulled out of Nvidia...",
+    "published": "2026-11-12",
+    "thumbnail": "https://i.ytimg.com/vi/SOwUWPtXQ9I/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)SOwUWPtXQ9I",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "583ThJIqQ7k",
     "channel": "AI Explained",
     "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
