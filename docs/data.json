@@ -1,5 +1,95 @@
 [
   {
+    "video_id": "SiXka_MUmbk",
+    "channel": "Matthew Berman",
+    "title": "How to ship an in-browser image generator in under 50 MB",
+    "published": "2026-11-20",
+    "thumbnail": "https://i.ytimg.com/vi/SiXka_MUmbk/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)SiXka_MUmbk",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "wn08Fr8CcBU",
+    "channel": "Matthew Berman",
+    "title": "Real-time multi-camera biomechanics on the web",
+    "published": "2026-11-20",
+    "thumbnail": "https://i.ytimg.com/vi/wn08Fr8CcBU/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)wn08Fr8CcBU",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "kSnoPNB5ND8",
+    "channel": "Matthew Berman",
+    "title": "The state of Transformers.js: What shipped, what's next",
+    "published": "2026-11-20",
+    "thumbnail": "https://i.ytimg.com/vi/kSnoPNB5ND8/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)kSnoPNB5ND8",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "nAeiMBLgQOA",
+    "channel": "Matthew Berman",
+    "title": "WebLLM 2.0: Engineering browser AI across execution, interface, and storage boundaries",
+    "published": "2026-11-20",
+    "thumbnail": "https://i.ytimg.com/vi/nAeiMBLgQOA/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)nAeiMBLgQOA",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "SI1gOfeqqEg",
+    "channel": "Matthew Berman",
+    "title": "Harnessing on-device AI: What’s new in web APIs",
+    "published": "2026-11-20",
+    "thumbnail": "https://i.ytimg.com/vi/SI1gOfeqqEg/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)SI1gOfeqqEg",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "rMaMe32qQkA",
+    "channel": "Fireship",
+    "title": "If you’ve deployed anything since 2015, I have bad news...",
+    "published": "2026-11-20",
+    "thumbnail": "https://i.ytimg.com/vi/rMaMe32qQkA/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)rMaMe32qQkA",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "KGA7B_c_S4s",
     "channel": "AI Explained",
     "title": "Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story",
