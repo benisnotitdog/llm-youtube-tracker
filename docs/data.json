@@ -1,5 +1,110 @@
 [
   {
+    "video_id": "Zk2g7NGWGgQ",
+    "channel": "Matthew Berman",
+    "title": "Taking WebMCP to production",
+    "published": "2026-11-23",
+    "thumbnail": "https://i.ytimg.com/vi/Zk2g7NGWGgQ/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)Zk2g7NGWGgQ",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "0WXPYUAFr-0",
+    "channel": "Matthew Berman",
+    "title": "Distributing an LLM across machines, and coding with it. Entirely in the browser",
+    "published": "2026-11-23",
+    "thumbnail": "https://i.ytimg.com/vi/0WXPYUAFr-0/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)0WXPYUAFr-0",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "G7XdThhth_Y",
+    "channel": "Matthew Berman",
+    "title": "Your money, your machine: Private finance AI with WebGPU and WebMCP",
+    "published": "2026-11-23",
+    "thumbnail": "https://i.ytimg.com/vi/G7XdThhth_Y/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)G7XdThhth_Y",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "66zWohMI_es",
+    "channel": "Matthew Berman",
+    "title": "The browser already won, we just haven’t realized it yet",
+    "published": "2026-11-23",
+    "thumbnail": "https://i.ytimg.com/vi/66zWohMI_es/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)66zWohMI_es",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "7CrR4iXWLwM",
+    "channel": "Matthew Berman",
+    "title": "Web AI meets physical AI: Multimodal robotics in the browser",
+    "published": "2026-11-23",
+    "thumbnail": "https://i.ytimg.com/vi/7CrR4iXWLwM/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)7CrR4iXWLwM",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Matthew Berman",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "1jPdehG3Hms",
+    "channel": "Two Minute Papers",
+    "title": "Claude AI Solved The Secret Of Black Holes",
+    "published": "2026-11-23",
+    "thumbnail": "https://i.ytimg.com/vi/1jPdehG3Hms/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)1jPdehG3Hms",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "jP9yjEDlc4k",
+    "channel": "Fireship",
+    "title": "Opus just lost to the last company you'd expect...",
+    "published": "2026-11-23",
+    "thumbnail": "https://i.ytimg.com/vi/jP9yjEDlc4k/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)jP9yjEDlc4k",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "SiXka_MUmbk",
     "channel": "Matthew Berman",
     "title": "How to ship an in-browser image generator in under 50 MB",
