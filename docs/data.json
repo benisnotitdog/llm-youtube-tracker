@@ -1,5 +1,35 @@
 [
   {
+    "video_id": "hwWlEuI359w",
+    "channel": "Two Minute Papers",
+    "title": "Claude AI’s Biggest Math Breakthrough Has A Problem.",
+    "published": "2026-11-25",
+    "thumbnail": "https://i.ytimg.com/vi/hwWlEuI359w/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)hwWlEuI359w",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Two Minute Papers",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
+    "video_id": "Jatwf_XOncE",
+    "channel": "Fireship",
+    "title": "17 million lines of AI slop just cracked a 167-year-old math problem...",
+    "published": "2026-11-25",
+    "thumbnail": "https://i.ytimg.com/vi/Jatwf_XOncE/mqdefault.jpg",
+    "url": "[https://www.youtube.com/watch?v=](https://www.youtube.com/watch?v=)Jatwf_XOncE",
+    "summary": "分析暫時不可用，請檢查 OpenRouter 配額或網路連線。",
+    "sentiment": "Analytical",
+    "speaker": "Fireship",
+    "topics": [
+      "AI",
+      "Tech"
+    ]
+  },
+  {
     "video_id": "ZiBfawBKX_0",
     "channel": "Matthew Berman",
     "title": "When to use an MCP server vs CLI with DevTools for agents",
